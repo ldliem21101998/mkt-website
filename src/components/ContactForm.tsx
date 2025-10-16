@@ -1,4 +1,5 @@
-'use client'
+"use client";
+
 import { Button, Input, Select, Form } from "antd";
 import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";

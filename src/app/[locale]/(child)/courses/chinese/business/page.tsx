@@ -1,18 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import { ChevronLeft, Globe2, BriefcaseBusiness, Rocket } from "lucide-react";
-import { ChevronRight } from "lucide-react";
-import { MessageSquare, Briefcase, BookOpen, Globe } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
-import {
-  UserRoundPlus,
-  Gauge,
-  CalendarDays,
-  Users,
-  CheckCircle2,
-} from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
 import { Button } from "antd";
+import Image from "next/image";
 
 function ChineseBusinessSection() {
   const t = useTranslations();
@@ -96,91 +86,115 @@ function Section2({
 }
 
 function WhatYouWillGetSection() {
-  const iconComponents = {
-    MessageSquare: <MessageSquare className="h-8 w-8 text-white" />,
-    Briefcase: <Briefcase className="h-8 w-8 text-white" />,
-    BookOpen: <BookOpen className="h-8 w-8 text-white" />,
-    Globe: <Globe className="h-8 w-8 text-white" />,
-  };
   const t = useTranslations();
   const messages = useMessages();
   const targetData = (messages?.Courses?.chineseCourse?.business?.target
     ?.children || []) as {
     title: string;
-    icon: string;
   }[];
 
+  const dataStyle = [
+    {
+      bgColor: "bg-[#faf0f0]",
+      borderColor: "border-[#a40000]",
+      image: {
+        src: "/assets/images/courses/chinese/business/WhatYouWillGet/course-1.png",
+        alt: "course-1",
+        width: 385,
+        height: 288,
+      },
+      title: targetData[0].title,
+    },
+    {
+      bgColor: "bg-[rgba(240,_234,_249,_0.6)]",
+      borderColor: "border-[#6929c4]",
+      image: {
+        src: "/assets/images/courses/chinese/business/WhatYouWillGet/course-3.png",
+        alt: "course-3",
+        width: 258,
+        height: 349,
+      },
+      title: targetData[2].title,
+    },
+    {
+      bgColor: "bg-[#fffaea]",
+      borderColor: "border-[#ffcd32]",
+      image: {
+        src: "/assets/images/courses/chinese/business/WhatYouWillGet/course-2.png",
+        alt: "course-2",
+        width: 195,
+        height: 304,
+      },
+      title: targetData[1].title,
+    },
+    {
+      bgColor: "bg-[#f2faf4]",
+      borderColor: "border-[#24a148]",
+      image: {
+        src: "/assets/images/courses/chinese/business/WhatYouWillGet/course-4.png",
+        alt: "course-4",
+        width: 348,
+        height: 219,
+      },
+      title: targetData[3].title,
+    },
+  ];
+
   return (
-    <section className="relative w-full">
-      <div className="relative w-full hidden lg:block">
-        <Image
-          src="/assets/images/courses/english/communication/WhatYouWillGetSection/Banner.png"
-          alt="What you will get background"
-          fill
-          priority
-          className="object-cover -z-10"
-        />
-      </div>
-      <div className="relative bg-[#F7F7F5] lg:bg-transparent py-12 sm:py-14 lg:py-0">
-        <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center px-4 sm:px-6 gap-8 lg:gap-0">
-          <div className="w-full lg:w-1/3 flex items-end justify-center order-2 lg:order-none">
-            <div className="hidden lg:block">
-              <Image
-                src="/assets/images/courses/english/communication/WhatYouWillGetSection/Person.png"
-                alt="Person pointing"
-                width={400}
-                height={500}
-                className="object-contain"
-              />
-            </div>
-          </div>
-          <div className="w-full lg:w-2/3">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center lg:text-left text-gray-900">
-              {t("Courses.chineseCourse.business.target.title")}
-            </h2>
-            <div className="mt-8 sm:mt-10 rounded-2xl bg-[#F7F7F5] shadow-md ring-1 ring-gray-200 p-5 sm:p-6 md:p-8">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
-                {targetData.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col items-center text-center"
-                  >
-                    <div className="flex items-center justify-center h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-blue-900 shadow-md">
-                      {iconComponents[item.icon as keyof typeof iconComponents]}
-                    </div>
-                    <div className="mt-2 flex justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-8 w-5 sm:h-10 sm:w-6 text-blue-900"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                      >
-                        <line
-                          x1="12"
-                          y1="0"
-                          x2="12"
-                          y2="18"
-                          strokeDasharray="4,4"
-                          stroke="currentColor"
-                        />
-                        <polyline
-                          points="6,18 12,24 18,18"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                        />
-                      </svg>
-                    </div>
-                    <p className="mt-3 sm:mt-4 text-sm sm:text-base font-medium text-gray-700 leading-snug">
-                      {item.title}
-                    </p>
-                  </div>
-                ))}
+    <section className="relative w-ful mx-auto max-w-[1248px] py-16 px-4">
+      <h2 className="mb-10 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center  text-gray-900">
+        {t("Courses.chineseCourse.business.target.title")}
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+        <div className="flex flex-col gap-[30px] ">
+          {dataStyle
+            .filter((t, i) => i % 2 === 0)
+            .map((t, i) => (
+              <div
+                key={i}
+                className={`flex ${
+                  i % 2 === 0
+                    ? "flex-col"
+                    : "flex-col md:flex-row-reverse flex-1"
+                } border border-solid ${t.borderColor} ${
+                  t.bgColor
+                } rounded-2xl items-center justify-center`}
+              >
+                <p className="py-10 px-[30px]">{t.title}</p>
+                <Image
+                  src={t.image.src}
+                  alt={t.image.alt}
+                  width={t.image.width}
+                  height={t.image.height}
+                  className="mx-auto"
+                />
               </div>
-            </div>
-          </div>
+            ))}
+        </div>
+        <div className="flex flex-col gap-[30px]">
+          {dataStyle
+            .filter((t, i) => i % 2 !== 0)
+            .map((t, i) => (
+              <div
+                key={i}
+                className={`flex ${
+                  i % 2 !== 0
+                    ? "flex-col-reverse"
+                    : "flex-col-reverse md:flex-row flex-1"
+                } gap-4 border border-solid ${t.borderColor} ${
+                  t.bgColor
+                } rounded-2xl items-center justify-center`}
+              >
+                <Image
+                  src={t.image.src}
+                  alt={t.image.alt}
+                  width={t.image.width}
+                  height={t.image.height}
+                  className="mx-auto"
+                />
+                <p className="py-10 px-[30px]">{t.title}</p>
+              </div>
+            ))}
         </div>
       </div>
     </section>
@@ -408,7 +422,7 @@ function ForBusinessSection() {
             </h4>
             <ul className="mt-3 space-y-2 text-[#1D748C]">
               {forCoporationData.map((t, i) => (
-                <li className="flex items-center gap-2">
+                <li key={i} className="flex items-center gap-2">
                   <span className="text-[#1D748C]">✓</span> {t.title}
                 </li>
               ))}
@@ -637,12 +651,18 @@ function Achievements({}) {
         </h2>
         <div className="grid grid-cols-2 gap-8">
           {takeAwayData.map((f, i) => (
-            <div className="flex flex-col items-center justify-center gap-4">
+            <div
+              key={i}
+              className="flex flex-col items-center justify-center gap-4"
+            >
               <div className="shrink-0">
-                <img
+                <Image
                   src={
                     "/assets/images/courses/chinese/business/ForBusiness/idea-icon.png"
                   }
+                  alt="idea-icon"
+                  width={31}
+                  height={32}
                 />
               </div>
               <p className="text-center w-[80%]">
@@ -669,33 +689,43 @@ function ForBusiness({
   return (
     <section className="relative w-full bg-[#e5e7eb] py-[40px] lg:py-[80px]">
       <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
-        <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
+        <h2 className="text-[32px] md:text-[40px] text-center font-bold mb-2 lg:mb-8">
           {t("Courses.chineseCourse.business.forCoporation.title")}
         </h2>
-        <div className="flex flex-wrap justify-center items-center">
-          <div className="flex flex-col gap-[24px] px-[15px] py-0">
-            {forCoporationData.map((f, i) => (
-              <div key={i} className="flex gap-[1rem] ">
-                <div className="shrink-0">
-                  <img
-                    src={
-                      "/assets/images/courses/chinese/business/ForBusiness/idea-icon.png"
-                    }
-                  />
+        <div className="flex-1 flex flex-col-reverse sm:flex-row justify-center items-center">
+          <div>
+            <p className="text-center text-2xl font-bold mb-6">
+              {t("Courses.chineseCourse.business.forCoporation.subtitle")}
+            </p>
+            <div className="flex flex-col gap-6 px-[15px] py-0">
+              {forCoporationData.map((f, i) => (
+                <div key={i} className="flex gap-[1rem] ">
+                  <div className="shrink-0">
+                    <Image
+                      src={
+                        "/assets/images/courses/chinese/business/ForBusiness/idea-icon.png"
+                      }
+                      alt="idea-icon"
+                      width={31}
+                      height={32}
+                    />
+                  </div>
+                  <h3 className="text-[18px] lg:text-[24px] font-medium">
+                    {f.title}
+                  </h3>
                 </div>
-                <h3 className="text-[18px] lg:text-[24px] font-semibold">
-                  {f.title}
-                </h3>
-              </div>
-            ))}
+              ))}
+            </div>
+            <p className="max-w-2xl px-4 mt-6">
+              {t("Courses.chineseCourse.business.forCoporation.desc")}
+            </p>
           </div>
-          <div className="hidden lg:flex justify-center lg:justify-end px-[15px] py-0">
+          <div className="flex justify-center lg:justify-end px-[15px] py-0">
             <Image
               src={personSrc}
               alt="Business English student"
-              width={520}
-              height={640}
-              className="w-full max-w-[520px] h-auto object-contain"
+              width={482}
+              height={364}
             />
           </div>
         </div>
