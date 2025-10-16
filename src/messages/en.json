@@ -165,15 +165,18 @@
           "children": [
             {
               "title": "Step Into the China Market",
-              "desc": "China is one of the world’s largest economies. With Business Chinese, you’ll be able to connect directly with clients, partners, and opportunities across Asia."
+              "desc": "China is one of the world’s largest economies. With Business Chinese, you’ll be able to connect directly with clients, partners, and opportunities across Asia.",
+              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item1.png"
             },
             {
               "title": "Beyond Textbooks",
-              "desc": "We focus on the phrases, strategies, and etiquette you’ll actually use in negotiations, contracts, and everyday workplace communication."
+              "desc": "We focus on the phrases, strategies, and etiquette you’ll actually use in negotiations, contracts, and everyday workplace communication.",
+              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item2.png"
             },
             {
               "title": "Stay Ahead in Your Field",
-              "desc": "Professionals who speak Chinese are valued for their ability to bridge cultures. Gain a competitive edge in international trade, finance, tech, and more."
+              "desc": "Professionals who speak Chinese are valued for their ability to bridge cultures. Gain a competitive edge in international trade, finance, tech, and more.",
+              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.png"
             }
           ]
         },
@@ -203,23 +206,19 @@
           "children": [
             {
               "title": "Essential Business Vocabulary",
-              "desc": "From meetings to contracts, master the words that matter",
-              "ax": 5, "ay": 200, "side": "bottom"
+              "desc": "From meetings to contracts, master the words that matter"
             },
             {
               "title": "Cross-Cultural Confidence",
-              "desc": "Understand business etiquette and build lasting partnerships",
-              "ax": 150, "ay": 140, "side": "top"
+              "desc": "Understand business etiquette and build lasting partnerships"
             },
             {
               "title": "Clear & Persuasive Communication",
-              "desc": "Express ideas naturally in negotiations and presentations",
-              "ax": 380, "ay": 150, "side": "bottom"
+              "desc": "Express ideas naturally in negotiations and presentations"
             },
             {
               "title": "Career Momentum",
-              "desc": "Move up faster with language skills employers demand",
-              "ax": 450, "ay": 90, "side": "top"
+              "desc": "Move up faster with language skills employers demand"
             }
           ]
         },
