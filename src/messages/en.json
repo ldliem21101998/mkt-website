@@ -27,7 +27,8 @@
   },
   "Hero": {
     "contact": "GET STARTED",
-    "joinNow": "JOIN NOW"
+    "joinNow": "JOIN NOW",
+    "register":"REGISTER"
   },
   "DidYouKnow": {
     "title": "Did you know?",

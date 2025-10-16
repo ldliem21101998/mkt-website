@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
 import HexagonNumber from "@/components/HexagonNumber";
 import { ContactForm } from "@/components/ContactForm";
+import { Banner } from "../business/page";
 
 function ChineseCommunicationSection() {
   const t = useTranslations();
@@ -200,7 +201,13 @@ function CoursesSection() {
 export default function ChineseCommunicationCoursePage() {
   return (
     <main className="w-full">
-      <ChineseCommunicationSection />
+      <Banner
+        title={"Courses.chineseCourse.communication.title"}
+        desc={"Courses.chineseCourse.communication.desc"}
+        imgSrc={
+          "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.png"
+        }
+      />
       <OurUniqueSection />
       <GuidedChineseLearning />
       <CoursesSection />
