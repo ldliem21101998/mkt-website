@@ -125,13 +125,13 @@
               "title": "Tự tin giao tiếp tiếng Trung"
             },
             {
-              "title": "Học từ ngữ và câu nói mà người bản địa thường dùng"             
+              "title": "Học từ ngữ và câu nói mà người bản địa thường dùng"
             },
             {
-              "title": "Giáo viên giàu kinh nghiệm, luôn đồng hành và hướng dẫn từng bước"            
+              "title": "Giáo viên giàu kinh nghiệm, luôn đồng hành và hướng dẫn từng bước"
             },
             {
-              "title": "Học tập linh hoạt, bất cứ lúc nào, bất cứ nơi đâu"            
+              "title": "Học tập linh hoạt, bất cứ lúc nào, bất cứ nơi đâu"
             }
           ]
         },
@@ -363,5 +363,23 @@
         ]
       }
     ]
+  },
+  "ContactForm": {
+    "title": "Đừng bỏ lỡ cơ hội!",
+    "fullName": "Họ và tên *",
+    "phone": "Số điện thoại *",
+    "email": "Email *",
+    "currentRole": "Bạn hiện đang là? vd: học sinh,.. *",
+    "course": "Khóa học quan tâm",
+    "content": "Nội dung",
+    "submit": "Gửi thông tin",
+    "error": {
+      "fullName": "Vui lòng nhập họ và tên",
+      "phone": "Vui lòng nhập số điện thoại",
+      "email": "Vui lòng nhập email",
+      "currentRole": "Vui lòng nhập bạn hiện đang là? vd: học sinh,..",
+      "course": "Vui lòng chọn khóa học",
+      "content": "Vui lòng nhập nội dung"
+    }
   }
 }
