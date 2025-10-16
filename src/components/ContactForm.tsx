@@ -1,5 +1,5 @@
 import { Button, Input, Select, Form } from "antd";
-import { useMessages } from "next-intl";
+import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
@@ -10,6 +10,7 @@ export const ContactForm = () => {
   const messages = useMessages();
   const [form] = Form.useForm();
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const t = useTranslations("ContactForm");
 
   const courseData = (messages?.header.coursesMenu || []) as {
     key: string;
@@ -22,23 +23,23 @@ export const ContactForm = () => {
     const newErrors: { [key: string]: string } = {};
 
     if (!values.fullName?.trim()) {
-      newErrors.fullName = "Vui lòng nhập họ và tên";
+      newErrors.fullName = t("error.fullName");
     }
 
     if (!values.phone?.trim()) {
-      newErrors.phone = "Vui lòng nhập số điện thoại";
+      newErrors.phone = t("error.phone");
     } else if (!/^(0|\+84)(\d{9,10})$/.test(values.phone.replace(/\s+/g, ""))) {
-      newErrors.phone = "Vui lòng nhập số điện thoại hợp lệ";
+      newErrors.phone = t("error.phone");
     }
 
     if (!values.email?.trim()) {
-      newErrors.email = "Vui lòng nhập email";
+      newErrors.email = t("error.email");
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) {
-      newErrors.email = "Vui lòng nhập email hợp lệ";
+      newErrors.email = t("error.email");
     }
 
     if (!values.currentRole?.trim()) {
-      newErrors.currentRole = "Vui lòng nhập bạn hiện đang là? vd: học sinh,..";
+      newErrors.currentRole = t("error.currentRole");
     }
 
     setErrors(newErrors);
@@ -84,7 +85,7 @@ export const ContactForm = () => {
           <Form form={form} className="relative">
             <div className="p-4 sm:p-10 flex flex-col gap-6">
               <div className="text-2xl sm:text-3xl  text-center md:text-4xl sm:text-left font-bold">
-                Đừng bỏ lỡ cơ hội!
+                {t("title")}
               </div>
               <div className="flex flex-col gap-2">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-6">
@@ -92,7 +93,7 @@ export const ContactForm = () => {
                     <div className="relative">
                       <Form.Item name="fullName" className="!mb-0">
                         <Input
-                          placeholder="Họ và tên *"
+                          placeholder={t("fullName")}
                           className={getInputClassName("fullName")}
                           size="large"
                           onChange={() =>
@@ -114,7 +115,7 @@ export const ContactForm = () => {
                     <div className="relative">
                       <Form.Item name="phone" className="!mb-0">
                         <Input
-                          placeholder="Số điện thoại *"
+                          placeholder={t("phone")}
                           className={getInputClassName("phone")}
                           size="large"
                           onChange={() =>
@@ -137,7 +138,7 @@ export const ContactForm = () => {
                   <div className="relative">
                     <Form.Item name="email" className="!mb-0">
                       <Input
-                        placeholder="Email *"
+                        placeholder={t("email")}
                         className={getInputClassName("email")}
                         size="large"
                         onChange={() =>
@@ -159,7 +160,7 @@ export const ContactForm = () => {
                   <div className="relative">
                     <Form.Item name="currentRole" className="!mb-0">
                       <Input
-                        placeholder="Bạn hiện đang là? vd: học sinh,.. *"
+                        placeholder={t("currentRole")}
                         className={getInputClassName("currentRole")}
                         size="large"
                         onChange={() =>
@@ -192,7 +193,7 @@ export const ContactForm = () => {
                           value: item.key,
                         })),
                       }))}
-                      placeholder="Khóa học quan tâm"
+                      placeholder={t("course")}
                       onChange={() =>
                         setErrors((prev) => ({ ...prev, course: "" }))
                       }
@@ -202,7 +203,7 @@ export const ContactForm = () => {
                 <div className="flex flex-col mt-[22px]">
                   <Form.Item name="content" className="!mb-0">
                     <TextArea
-                      placeholder="Nội dung"
+                      placeholder={t("content")}
                       className={`${getInputClassName("content")}`}
                       size="large"
                       rows={4}
@@ -218,7 +219,7 @@ export const ContactForm = () => {
                   className="w-full sm:w-fit mt-[22px]"
                   onClick={handleSubmit}
                 >
-                  Gửi thông tin
+                  {t("submit")}
                 </Button>
               </div>
             </div>
