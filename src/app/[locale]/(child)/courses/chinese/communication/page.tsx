@@ -201,7 +201,6 @@ function CoursesSection() {
 export default function ChineseCommunicationCoursePage() {
   return (
     <main className="w-full">
-      <ChineseCommunicationSection />
       <Banner
         title={"Courses.chineseCourse.communication.title"}
         desc={"Courses.chineseCourse.communication.desc"}
