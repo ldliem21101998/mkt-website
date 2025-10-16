@@ -1,7 +1,6 @@
 import { ContactForm } from "@/components/ContactForm";
-import { ChevronLeft } from "lucide-react";
-import { useMessages, useTranslations } from "next-intl";
 import { Button } from "antd";
+import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 
 function WhatYouWillGetSection() {
@@ -220,7 +219,13 @@ export function Banner({
             </div>
           </div>
           <div className="w-[350px] hidden sm:block">
-            <img src={imgSrc} />
+            <Image
+              src={imgSrc}
+              alt="banner-image"
+              width={350}
+              height={350}
+              className="mx-auto"
+            />
           </div>
         </div>
       </div>
@@ -237,20 +242,26 @@ function HowWeTeach() {
   }[];
 
   return (
-    <section className="relative w-full bg-[#edf7ff] py-[40px] lg:py-[80px]">
+    <section className="relative w-full bg-[#edf7ff] py-[40px] lg:py-[80px] px-4">
       <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
         <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
           {t("Courses.chineseCourse.business.method.title")}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {methodData.map((f, i) => (
-            <div className="flex flex-col gap-4 items-center justify-center">
+            <div
+              key={i}
+              className="flex flex-col gap-4 items-center justify-center"
+            >
               <div className="w-full md:w-[50%] lg:w-full">
-                <img
+                <Image
                   src={
                     "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.png"
                   }
-                  className="rounded-lg"
+                  alt="method-image"
+                  width={214}
+                  height={214}
+                  className="mx-auto rounded-lg"
                 />
               </div>
               <div
@@ -279,7 +290,7 @@ function MasterChineseBusiness() {
   }[];
 
   return (
-    <section className="relative w-full bg-white py-[40px] lg:py-[80px]">
+    <section className="relative w-full bg-white py-[40px] lg:py-[80px] px-4">
       <div className="mx-auto xl:max-w-[1000px]">
         <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
           {t("Courses.chineseCourse.business.reason.title")}
@@ -287,19 +298,24 @@ function MasterChineseBusiness() {
         <div className="w-full">
           {reasonData.map((f, i) => (
             <div
-              className={`w-full flex flex-row ${
-                i % 2 !== 0 ? "flex-row-reverse" : ""
+              key={i}
+              className={`w-full flex flex-col ${
+                i % 2 !== 0 ? "sm:flex-row-reverse" : "sm:flex-row"
               } justify-between items-center my-[10px]`}
             >
-              <div className="flex flex-col gap-2 w-[490px]">
+              <div className="flex flex-col gap-2 sm:w-[490px]">
                 <div className="font-black text-[30px] text-[#A40000]">
                   {f.title}
                 </div>
                 <div className="font-medium text-[20px]">{f.desc}</div>
               </div>
-              <div className="w-[350px]">
-                <img src={f.img} />
-              </div>
+              <Image
+                src={f.img}
+                alt="reason-image"
+                width={350}
+                height={350}
+                className="mx-auto w-1/2 sm:w-[350px] h-auto object-cover"
+              />
             </div>
           ))}
         </div>
@@ -318,12 +334,12 @@ function Achievements({}) {
   }[];
 
   return (
-    <section className="relative w-full bg-linear-to-r from-sky-200 to-[#edf7ff] py-[40px] lg:py-[80px]">
-      <div className="mx-auto xl:max-w-[1000px]">
+    <section className="relative w-full bg-linear-to-r from-sky-200 to-[#edf7ff] py-[40px] lg:py-[80px] ">
+      <div className="mx-auto xl:max-w-[1000px] px-4">
         <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
           {t("Courses.chineseCourse.business.takeaway.title")}
         </h2>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {takeAwayData.map((f, i) => (
             <div
               key={i}
