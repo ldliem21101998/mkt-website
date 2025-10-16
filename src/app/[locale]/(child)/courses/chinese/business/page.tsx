@@ -12,6 +12,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
+import { Button } from "antd";
 
 function ChineseBusinessSection() {
   const t = useTranslations();
@@ -499,9 +500,87 @@ function CoursesSection() {
   );
 }
 
-function MasterChineseBusiness({
-  personSrc = "/assets/images/courses/english/business/Section2/Person.png",
+export function Banner({
+  title,
+  desc,
+  imgSrc,
+}: {
+  title: string;
+  desc: string;
+  imgSrc: string;
 }) {
+  const t = useTranslations();
+  return (
+    <section className="relative w-full bg-linear-to-r from-sky-200 to-[#edf7ff] py-[40px] lg:py-[80px] px-4">
+      <div className="mx-auto xl:max-w-[1000px]">
+        <div
+          className={`w-full flex flex-row justify-between items-center my-[10px]`}
+        >
+          <div className="flex flex-col gap-8 w-[490px]">
+            <div className="font-black text-[36px]">{t(title)}</div>
+            <div className="font-medium text-[20px]">{t(desc)}</div>
+            <div className="flex gap-4">
+              <Button type="primary" size="large">
+                {t("Hero.joinNow")}
+              </Button>
+              <Button
+                size="large"
+                className=" bg-[#A40000] !text-white hover:!bg-white hover:!text-[#A40000] hover:!border-[#A40000]"
+              >
+                {t("Hero.register")}
+              </Button>
+            </div>
+          </div>
+          <div className="w-[350px] hidden sm:block">
+            <img src={imgSrc} />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HowWeTeach() {
+  const t = useTranslations();
+  const messages = useMessages();
+  const methodData = (messages?.Courses?.chineseCourse?.business?.method
+    ?.children || []) as {
+    title: string;
+  }[];
+
+  return (
+    <section className="relative w-full bg-[#edf7ff] py-[40px] lg:py-[80px]">
+      <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
+        <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
+          {t("Courses.chineseCourse.business.forCoporation.title")}
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {methodData.map((f, i) => (
+            <div className="flex flex-col gap-4 items-center justify-center">
+              <div className="w-full md:w-[50%] lg:w-full">
+                <img
+                  src={
+                    "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.png"
+                  }
+                  className="rounded-lg"
+                />
+              </div>
+              <div
+                className="text-center w-[90%]"
+                dangerouslySetInnerHTML={{ __html: f.title }}
+              />
+              <Button type="primary" size="large">
+                {t("Hero.joinNow")}
+              </Button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MasterChineseBusiness() {
   const t = useTranslations();
   const messages = useMessages();
   const reasonData = (messages?.Courses?.chineseCourse?.business?.reason
@@ -512,26 +591,29 @@ function MasterChineseBusiness({
   }[];
 
   return (
-    <section className="relative w-full bg-[#e5e7eb] py-[40px] lg:py-[80px]">
-      <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
+    <section className="relative w-full bg-white py-[40px] lg:py-[80px]">
+      <div className="mx-auto xl:max-w-[1000px]">
         <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
           {t("Courses.chineseCourse.business.reason.title")}
         </h2>
         <div className="w-full">
-          {reasonData.map((f, i) => {
-            console.log(f, "ewvkn");
-            
-            return(
-            <div className={`w-full flex flex-row ${i % 2 !== 0 ? "flex-row-reverse" : ""} justify-between items-center`}>
-              <div className="flex flex-col gap-2">
-                <div className="font-bold">{f.title}</div>
-                <div className="">{f.desc}</div>
+          {reasonData.map((f, i) => (
+            <div
+              className={`w-full flex flex-row ${
+                i % 2 !== 0 ? "flex-row-reverse" : ""
+              } justify-between items-center my-[10px]`}
+            >
+              <div className="flex flex-col gap-2 w-[490px]">
+                <div className="font-black text-[30px] text-[#A40000]">
+                  {f.title}
+                </div>
+                <div className="font-medium text-[20px]">{f.desc}</div>
               </div>
-              <div>
+              <div className="w-[350px]">
                 <img src={f.img} />
               </div>
             </div>
-          )})}
+          ))}
         </div>
       </div>
     </section>
@@ -548,12 +630,12 @@ function Achievements({}) {
   }[];
 
   return (
-    <section className="relative w-full bg-linear-to-r from-green-500 to-green-100 py-[40px] lg:py-[80px]">
-      <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
+    <section className="relative w-full bg-linear-to-r from-sky-200 to-[#edf7ff] py-[40px] lg:py-[80px]">
+      <div className="mx-auto xl:max-w-[1000px]">
         <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
           {t("Courses.chineseCourse.business.takeaway.title")}
         </h2>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-8">
           {takeAwayData.map((f, i) => (
             <div className="flex flex-col items-center justify-center gap-4">
               <div className="shrink-0">
@@ -563,7 +645,7 @@ function Achievements({}) {
                   }
                 />
               </div>
-              <p className="text-center">
+              <p className="text-center w-[80%]">
                 <span className="font-bold">{f.title}</span> {f.desc}
               </p>
             </div>
@@ -626,12 +708,17 @@ export default function ChineseBusinessCoursePage() {
   return (
     <main className="w-full">
       <ChineseBusinessSection />
-      <Section2 />
       <WhatYouWillGetSection />
-      <AchievementsSection />
       <HowYouWillLearnSection />
-      <ForBusinessSection />
 
+      <Banner
+        title={"Courses.chineseCourse.business.title"}
+        desc={"Courses.chineseCourse.business.desc"}
+        imgSrc={
+          "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.png"
+        }
+      />
+      <HowWeTeach />
       <MasterChineseBusiness />
       <Achievements />
       <ForBusiness />
