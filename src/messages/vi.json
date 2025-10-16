@@ -1,0 +1,364 @@
+{
+  "header": {
+    "courses": "Khóa học",
+    "coursesMenu": [
+      {
+        "key": "english",
+        "title": "TIẾNG ANH",
+        "items": [
+          { "key": "ielts", "label": "Luyện nói IELTS" },
+          { "key": "communication", "label": "Tiếng Anh giao tiếp" },
+          { "key": "business", "label": "Tiếng Anh thương mại" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "TIẾNG TRUNG",
+        "items": [
+          { "key": "studying_abroad", "label": "Tiếng Trung du học" },
+          { "key": "communication", "label": "Tiếng Trung giao tiếp" },
+          { "key": "business", "label": "Tiếng Trung thương mại" }
+        ]
+      }
+    ],
+    "teachers": "Giáo viên",
+    "recruit": "Tuyển dụng",
+    "login": "ĐĂNG NHẬP"
+  },
+  "Hero": {
+    "contact": "BẮT ĐẦU NGAY",
+    "joinNow": "THAM GIA NGAY"
+  },
+  "DidYouKnow": {
+    "title": "Bạn có biết?",
+    "point1": "Phần lớn người học mất hàng trăm giờ luyện tập để nói một ngôn ngữ mới, nhưng vẫn lúng túng trước người nước ngoài. Hoang mang vì không nghe hiểu, không có phản xạ?",
+    "point2": "Với đội ngũ giáo viên bản xứ, bạn sẽ nhanh chóng cải thiện phát âm, sự lưu loát và tự tin. Nỗi lo <span>“không giao tiếp được với người bản xứ”</span> sẽ hoàn toàn biến mất."
+  },
+  "Highlights": [
+    {
+      "bg": "/assets/images/HighlightsSection/Picture1.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/AspirelyIcon.png",
+      "title": "Aspirely là gì?",
+      "content": "Aspirely là nền tảng học ngôn ngữ trực tuyến tập trung 100% vào kỹ năng Nghe và Nói.<br/><br/>Tại đây, bạn học Tiếng Anh và Tiếng Trung qua những buổi trò chuyện thực tế, không giáo trình khô khan - chỉ có luyện nói hiệu quả, tự tin và tự nhiên.",
+      "button": "Tìm hiểu thêm"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture2.png",
+      "overlay": "bg-[#00356d]/80",
+      "icon": "/assets/images/HighlightsSection/BookIcon.png",
+      "title": "Khoá học",
+      "content": "Giao tiếp hằng ngày nói tự nhiên, phản xạ nhanh hơn<br/><br/>Listening & Speaking IELTS & HSK chinh phục kỳ thi quốc tế<br/><br/>Tiếng Anh/Trung cho công việc, giao tiếp chuyên nghiệp, ứng dụng ngay",
+      "button": "Khoá học của chúng tôi"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture3.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/PeopleIcon.png",
+      "title": "Giáo viên",
+      "content": "Học cùng giáo viên bản ngữ, bạn sẽ học được cách phản xạ, giao tiếp trôi chảy và tự tin hơn mỗi ngày.<br/><br/>Bạn không chỉ học thêm được một ngôn ngữ mà còn ứng dụng được trong cuộc sống và công việc.",
+      "button": "Giáo viên của chúng tôi"
+    }
+  ],
+  "WorkshopPromo": {
+    "title": "Trải nghiệm học thử <br></br><span>Speaking Class</span>",
+    "subtitle": "Hiểu nhanh khi nghe, tự tin khi nói",
+    "point1": "Bắt đầu ngay hôm nay cùng Aspirely!",
+    "point2": "Nhận ngay: Kiểm tra trình độ miễn phí + 2 buổi học thử miễn phí trải nghiệm học trực tuyến với giáo viên bản xứ, sửa phát âm, luyện phản xạ giao tiếp.",
+    "button": "Miễn phí tham gia"
+  },
+  "Courses": {
+    "title": "Đồng hành cùng <span>Aspirely</span>",
+    "subtitle": "Nâng tầm tiếng nói, mở rộng tương lai",
+    "courses": [
+      {
+        "id": "01",
+        "title": "Luyện nói IELTS",
+        "desc": "Chinh phục IELTS với sự đồng hành của giáo viên chuyên nghiệp. Luyện phát âm, luyện kỹ năng nói tự nhiên và loại bỏ nỗi lo khi giao tiếp với người nước ngoài.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "02",
+        "title": "Tiếng Anh Giao Tiếp",
+        "desc": "Phát triển toàn diện kỹ năng Tiếng Anh Giao Tiếp: phát âm, từ vựng, phản xạ và sự tự tin. Khóa học mang đến trải nghiệm học tập hiệu quả, đồng hành cùng bạn trên con đường hội nhập toàn cầu.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "03",
+        "title": "Tiếng Anh Thương Mại",
+        "desc": "Nâng tầm sự nghiệp với Tiếng Anh Thương Mại. Khóa học trang bị cho bạn kỹ năng ngôn ngữ chuyên ngành, khả năng giao tiếp thuyết phục và lợi thế cạnh tranh bền vững trong môi trường quốc tế.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "04",
+        "title": "Tiếng Trung Du Học",
+        "desc": "Khoá học Tiếng Trung Du Học không đơn thuần chỉ để vượt qua các kỳ thi. Chúng tôi mang đến cho bạn nền tảng vững chắc để giao tiếp tự nhiên, tham gia vào môi trường học thuật, và hòa nhập dễ dàng vào cuộc sống tại Đài Loan, Trung Quốc hay bất kỳ quốc gia sử dụng tiếng Trung nào.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "05",
+        "title": "Tiếng Trung Giao Tiếp",
+        "desc": "Đừng lo nếu bạn mới bắt đầu! <br></br> Bạn sẽ dần dần xây dựng sự tự tin, cải thiện khả năng giao tiếp và phát triển kỹ năng nghe nói ngày càng lưu loát, để việc học ngôn ngữ trở thành một trải nghiệm thoải mái và đầy hứng khởi.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "06",
+        "title": "Tiếng Trung Thương Mại",
+        "desc": "Tiếng Trung Thương Mại giúp bạn nói trôi chảy với người bản xứ, đồng thời nâng cao kỹ năng nghe, phản xạ và từ vựng. Khóa học linh hoạt, phù hợp cho mục tiêu học tập, công việc và phát triển sự nghiệp.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      }
+    ],
+    "chineseCourse": {
+      "communication": {
+        "title": "LÀM CHỦ TIẾNG TRUNG GIAO TIẾP",
+        "desc": "Học nói tiếng Trung một cách tự nhiên — cho du lịch, du học và cơ hội quốc tế.",
+        "unique": {
+          "title": "Điểm khác biệt của chúng tôi",
+          "children": [
+            {
+              "title": "Tự tin giao tiếp tiếng Trung"
+            },
+            {
+              "title": "Học từ ngữ và câu nói mà người bản địa thường dùng"             
+            },
+            {
+              "title": "Giáo viên giàu kinh nghiệm, luôn đồng hành và hướng dẫn từng bước"            
+            },
+            {
+              "title": "Học tập linh hoạt, bất cứ lúc nào, bất cứ nơi đâu"            
+            }
+          ]
+        },
+        "features": {
+          "title": "",
+          "children": [
+            {
+              "title": "Vì sao tự học rất khó",
+              "desc": "Tiếng Trung không chỉ là chữ viết trong sách. Người mới bắt đầu thường không biết khởi đầu từ đâu, còn người học nâng cao lại khó khăn trong việc phát âm và nói tự nhiên. Ứng dụng và sách giáo khoa không thể sửa lỗi cho bạn, giáo viên giàu kinh nghiệm thì có thể."
+            },
+            {
+              "title": "Biến luyện tập thành sự tự tin",
+              "desc": "Từ câu chào “你好” cho đến việc mua vé tàu, luyện tập giúp bạn sử dụng tiếng Trung một cách trôi chảy trong đời sống hằng ngày."
+            },
+            {
+              "title": "Tiến bộ nhanh hơn cùng giáo viên giàu kinh nghiệm",
+              "desc": "Giáo viên không chỉ dạy, họ còn hướng dẫn bạn về phát âm, thanh điệu và bối cảnh văn hoá, để bạn nói rõ ràng và tự tin."
+            },
+            {
+              "title": "Tiếng Trung ứng dụng trong thực tế",
+              "desc": "Aspirely giúp bạn giao tiếp hiệu quả trong những tình huống thực tế,  từ gọi món ăn, kết bạn, đi du học, đến làm việc, họp hành hay thuyết trình bằng tiếng Trung đầy tự tin."
+            }
+          ]
+        }
+      },
+      "business": {
+        "title": "LÀM CHỦ TIẾNG TRUNG KINH DOANH",
+        "desc": "Tự tin giao tiếp,  Vững bước sự nghiệp Ngôn ngữ mở ra cơ hội, Sự nghiệp vươn tầm quốc tế.",
+        "reason": {
+          "title": "Vì sao nên học Tiếng Trung Thương Mại?",
+          "children": [
+            {
+              "title": "Bước vào thị trường Trung Quốc",
+              "desc": "Trung Quốc là nền kinh tế lớn, cơ hội hợp tác trải rộng khắp Châu Á. Biết Tiếng Trung giúp bạn kết nối trực tiếp với khách hàng và đối tác."
+            },
+            {
+              "title": "Học ngôn ngữ thực tiễn",
+              "desc": "Không dừng lại ở sách vở, khóa học tập trung vào từ ngữ, cách giao tiếp và nghi thức cần thiết trong thương lượng, ký kết và làm việc hằng ngày."
+            },
+            {
+              "title": "Nắm lợi thế cạnh tranh",
+              "desc": "Người thành thạo Tiếng Trung thường được đánh giá cao vì khả năng kết nối văn hóa. Đây là chìa khóa để thăng tiến trong thương mại, tài chính, công nghệ và nhiều ngành khác."
+            }
+          ]
+        },
+        "target": {
+          "title": "Ai nên tham gia khóa học?",
+          "children": [
+            {
+              "title": "Doanh nhân đang mở rộng sang thị trường Trung Quốc",
+              "icon": "MessageSquare"
+            },
+            {
+              "title": "Lãnh đạo, quản lý thường xuyên làm việc với đối tác Trung Quốc",
+              "icon": "Briefcase"
+            },
+            {
+              "title": "Sinh viên chuẩn bị hành trang cho sự nghiệp toàn cầu",
+              "icon": "BookOpen"
+            },
+            {
+              "title": "Doanh nghiệp cần đội ngũ giao tiếp hiệu quả xuyên biên giới",
+              "icon": "Globe"
+            }
+          ]
+        },
+        "takeaway": {
+          "title": "Giá trị nhận được sau khóa học",
+          "children": [
+            {
+              "title": "Từ vựng chuyên ngành thiết yếu",
+              "desc": "Tự tin trong cuộc họp, hợp đồng và email",
+              "ax": 5,
+              "ay": 200,
+              "side": "bottom"
+            },
+            {
+              "title": "Hiểu biết văn hóa",
+              "desc": "Nắm bắt phong tục, xây dựng quan hệ hợp tác lâu dài",
+              "ax": 150,
+              "ay": 140,
+              "side": "top"
+            },
+            {
+              "title": "Kỹ năng thuyết phục",
+              "desc": "Diễn đạt ý tưởng rõ ràng, tự nhiên trong mọi tình huống công việc",
+              "ax": 380,
+              "ay": 150,
+              "side": "bottom"
+            },
+            {
+              "title": "Cơ hội nghề nghiệp",
+              "desc": "Tăng sức cạnh tranh và thăng tiến nhanh hơn",
+              "ax": 450,
+              "ay": 90,
+              "side": "top"
+            }
+          ]
+        },
+        "method": {
+          "title": "Cách chúng tôi giảng dạy",
+          "children": [
+            {
+              "title": "<b>Lớp học trực tuyến tương tác</b> với giảng viên giàu kinh nghiệm"
+            },
+            {
+              "title": "<b>Tình huống mô phỏng thực tế</b> nhập vai trong các kịch bản kinh doanh cụ thể"
+            },
+            {
+              "title": "<b>Lịch học linh hoạt</b> phù hợp với nhịp làm việc và học tập của bạn"
+            }
+          ]
+        },
+        "forCoporation": {
+          "title": "Tiếng Trung Thương Mại dành cho công ty",
+          "subtitle": "Khóa học giúp đội ngũ của bạn:",
+          "desc": "Chương trình được thiết kế riêng theo ngành nghề, đảm bảo nhân viên học đúng ngôn ngữ mang lại hiệu quả rõ rệt cho doanh nghiệp.",
+          "children": [
+            {
+              "title": "Tạo dựng niềm tin với khách hàng Trung Quốc"
+            },
+            {
+              "title": "Xử lý đàm phán chuyên nghiệp"
+            },
+            {
+              "title": "Giao tiếp hiệu quả vượt qua rào cản văn hóa"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Cefr": {
+    "title": "CEFR là gì?",
+    "subtitle": "Từ Sơ Cấp đến Thành Thạo — Hành Trình Ngôn Ngữ CEFR"
+  },
+  "Teacher": {
+    "title": "Đội ngũ giáo viên",
+    "teachers": [
+      {
+        "id": "1",
+        "name": "Aimie C.",
+        "image": "/assets/images/TeacherSection/Aimie.webp"
+      },
+      {
+        "id": "2",
+        "name": "Mia M.",
+        "image": "/assets/images/TeacherSection/Mia.webp"
+      },
+      {
+        "id": "3",
+        "name": "Leo N.",
+        "image": "/assets/images/TeacherSection/Leo.webp"
+      }
+    ]
+  },
+  "Test": {
+    "subtitle": "Trong Vài Phút",
+    "title": "Kiểm Tra Trình Độ <br></br> Ngoại Ngữ Của Bạn",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "agreement1": "Tôi đồng ý tham gia danh sách nhận thông tin khóa học trực tuyến",
+    "agreement2": "Tôi đồng ý để ASPIRELY liên hệ với tôi qua điện thoại, email hoặc tin nhắn SMS nhằm hỗ trợ giải đáp thắc mắc của tôi",
+    "button": "Kiểm Tra Miễn Phí"
+  },
+  "Testimonial": {
+    "items": [
+      {
+        "name": "Phương Nghi",
+        "image": "/students/PhuongNghi.webp",
+        "age": "20",
+        "location": "TP. HCM",
+        "content": "Trang web dễ dùng, load nhanh, giao diện xịn và học online rất tiện lợi mà không cần rời khỏi nhà. Giáo trình được cá nhân hóa nên học đúng trình độ, không áp lực hay gò bó. Mình thích nhất là lịch học linh hoạt, phù hợp cả sinh viên bận rộn như mình.",
+        "class": "Tham gia lớp 1 - 1"
+      },
+      {
+        "name": "Nhi Nguyễn",
+        "image": "/students/NhiNguyen.webp",
+        "age": "21",
+        "location": "TP. HCM",
+        "content": "Giảng viên người Anh phát âm cực chuẩn, sửa lỗi kỹ và luôn tập trung vào chất lượng chứ không chạy theo chỉ tiêu. Cô Aimie thân thiện, giảng giải rõ ràng, đặc biệt rất kiên nhẫn với học viên học chậm như mình. Sau một thời gian học, mình tự tin nói tiếng Anh hơn hẳn.",
+        "class": "Tham gia lớp 1 - 1"
+      },
+      {
+        "name": "Mỹ Mỹ",
+        "image": "/students/MyMy.webp",
+        "age": "22",
+        "location": "TP. HCM",
+        "content": "Ban đầu mình khá lo lắng về khả năng nói tiếng Anh, nhưng nhờ chương trình học thực tế và giáo viên tận tâm, mình đã tiến bộ rõ rệt. Các chủ đề đa dạng, dễ áp dụng vào đời sống. Cô sửa phát âm chi tiết từng từ, tạo cảm giác thoải mái khi luyện nói. Cảm ơn trung tâm đã giúp mình tự tin giao tiếp hơn mỗi ngày.",
+        "class": "Tham gia lớp 1 - 1"
+      }
+    ]
+  },
+  "CTA": {
+    "title": "Bạn đã sẵn sàng chưa?",
+    "subtitle": "Trải nghiệm thử miễn phí, cảm nhận sự khác biệt.<br></br>Hãy để Aspirely giúp bạn xoá bỏ lo lắng khi giao tiếp, tự tin kết nối và hòa nhập quốc tế.",
+    "button": "Đăng ký"
+  },
+  "footer": {
+    "sections": [
+      {
+        "key": "english",
+        "title": "TIẾNG ANH",
+        "items": [
+          { "key": "ielts", "label": "Luyện nói IELTS" },
+          { "key": "communication", "label": "Tiếng Anh giao tiếp" },
+          { "key": "business", "label": "Tiếng Anh thương mại" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "TIẾNG TRUNG",
+        "items": [
+          { "key": "studying_abroad", "label": "Tiếng Trung du học" },
+          { "key": "communication", "label": "Tiếng Trung giao tiếp" },
+          { "key": "business", "label": "Tiếng Trung thương mại" }
+        ]
+      },
+      {
+        "title": "TÌM HIỂU THÊM",
+        "items": [
+          { "label": "Giới thiệu về Aspirely", "key": "about" },
+          { "label": "Chính sách bảo mật", "key": "privacy" },
+          { "label": "Điều khoản dịch vụ", "key": "terms" },
+          { "label": "Liên hệ", "key": "contact" }
+        ]
+      }
+    ]
+  }
+}

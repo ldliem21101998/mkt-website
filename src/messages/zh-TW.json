@@ -1,0 +1,212 @@
+{
+  "header": {
+    "courses": "課程",
+    "teachers": "教師",
+    "recruit": "招聘",
+    "login": "登入",
+    "coursesMenu": [
+      {
+        "key": "english",
+        "title": "英語",
+        "items": [
+          { "key": "ielts", "label": "雅思口語訓練" },
+          { "key": "communication", "label": "英語交流" },
+          { "key": "business", "label": "商務英語" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "中文",
+        "items": [
+          { "key": "chinese_study_abroad", "label": "留學中文" },
+          { "key": "chinese_communication", "label": "中文交流" },
+          { "key": "chinese_business", "label": "商務中文" }
+        ]
+      }
+    ]
+  },
+  "Hero": {
+    "contact": "立即開始"
+  },
+  "DidYouKnow": {
+    "title": "你知道嗎？",
+    "point1": "許多學習者花了長時間練習新語言，但一遇到外國人，仍然覺得挫折——聽不懂、反應不及時，常常不知所措？",
+    "point2": "在母語老師團隊的帶領下，你將快速提升發音、流暢度與自信，從此不再擔心<span>「無法與母語者交流」</span>。"
+  },
+  "Highlights": [
+    {
+      "bg": "/assets/images/HighlightsSection/Picture1.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/AspirelyIcon.png",
+      "title": "什麼是 Aspirely？",
+      "content": "Aspirely 是一個專注於聽力和口語技能的線上語言學習平台。<br/><br/>在 Aspirely，你不只是學一門語言，而是真正能把它運用在生活與工作中。",
+      "button": "了解更多"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture2.png",
+      "overlay": "bg-[#00356d]/80",
+      "icon": "/assets/images/HighlightsSection/BookIcon.png",
+      "title": "課程",
+      "content": "日常對話，讓你說得更自然、反應更快。<br/><br/>雅思 & HSK 聽力口語，助你征服國際考試。<br/><br/>工作英語/中文——專業溝通，立即應用。",
+      "button": "我們的課程"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture3.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/PeopleIcon.png",
+      "title": "教師",
+      "content": "透過與母語教師學習，你將逐漸每天說得更自然、更流利、更自信。<br/><br/>在 Aspirely，你不僅僅是在學習一門語言——你真正能夠在生活和工作中使用它。",
+      "button": "我們的教師"
+    }
+  ],
+  "WorkshopPromo": {
+    "title": "體驗英語口語 <span>工作坊</span>",
+    "subtitle": "快速理解 —— 自信開口",
+    "point1": "今天就從 Aspirely 開始！",
+    "point2": "立即獲取: 免費水平測試 + 2 節免費體驗課，與母語教師線上學習，練習發音，提高溝通反應。",
+    "button": "免費參加"
+  },
+  "Courses": {
+    "title": "與 <span>Aspirely</span> 一起",
+    "subtitle": "提升你的聲音，拓展你的未來",
+    "courses": [
+      {
+        "id": "01",
+        "title": "雅思口語訓練",
+        "desc": "征服 IELTS，在專業老師的陪伴下更有信心。<br/><br/>自信走進考場，不再擔心！我們陪伴你，讓你聽懂考官的每一個指令與問題。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "02",
+        "title": "英語交流",
+        "desc": "全面提升英語交流能力：發音、詞彙、反應、自信。本課程為你帶來高效的學習體驗，陪伴你走向全球化。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "03",
+        "title": "商務英語",
+        "desc": "用商務英語提升你的職業生涯。本課程為你提供專業語言技能、說服性溝通和國際環境中的競爭優勢。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "04",
+        "title": "留學中文",
+        "desc": "留學中文課程不僅僅是為了通過考試。我們為你打造扎實的基礎，讓你能自然溝通、融入學術環境，並輕鬆適應在台灣、中國或任何使用中文的國家的生活。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "05",
+        "title": "中文交流",
+        "desc": "別擔心，如果你是初學者！<br/><br/>你將逐步建立自信，提升溝通能力，讓聽說技能越來越流暢，讓語言學習成為一段輕鬆而充滿熱情的體驗。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "06",
+        "title": "商務中文",
+        "desc": "商務中文幫助你與母語者流利交流，同時加強聽力、反應和詞彙。靈活的課程，專為學習、工作和職業發展而設。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      }
+    ]
+  },
+  "Cefr": {
+    "title": "什麼是 CEFR？",
+    "subtitle": "從初學者到精通者 —— CEFR 語言之旅"
+  },
+  "Teacher": {
+    "title": "教師團隊",
+    "teachers": [
+      {
+        "id": "1",
+        "name": "Aimie C.",
+        "image": "/assets/images/TeacherSection/Aimie.webp"
+      },
+      {
+        "id": "2",
+        "name": "Mia M.",
+        "image": "/assets/images/TeacherSection/Mia.webp"
+      },
+      {
+        "id": "3",
+        "name": "Leo N.",
+        "image": "/assets/images/TeacherSection/Leo.webp"
+      }
+    ]
+  },
+  "Test": {
+    "subtitle": "幾分鐘內完成",
+    "title": "測試你的 <br></br> 語言水平",
+    "email": "電子郵件",
+    "phone": "電話號碼",
+    "agreement1": "我同意接收關於線上英語課程的最新資訊",
+    "agreement2": "我同意 Aspirely 透過電話、電子郵件或簡訊聯繫我以提供支援並解答疑問",
+    "button": "免費測評"
+  },
+  "Testimonial": {
+    "items": [
+      {
+        "name": "Phuong Nghi",
+        "image": "/students/PhuongNghi.webp",
+        "age": "20",
+        "location": "胡志明市",
+        "content": "網站易於使用，載入快速，介面精美，線上學習非常方便，無需離開家。課程是個性化的，因此我能在合適的水平學習，沒有壓力或束縛。我最喜歡的是靈活的時間安排，即使是像我這樣忙碌的學生也很合適。",
+        "class": "參加 1 - 1 課程"
+      },
+      {
+        "name": "Nhi Nguyen",
+        "image": "/students/NhiNguyen.webp",
+        "age": "21",
+        "location": "胡志明市",
+        "content": "英國講師的發音非常標準，她細心糾正錯誤，總是注重品質而不是數量。Aimie 老師很友好，講解清楚，對像我這樣進度慢的學生尤其有耐心。學習一段時間後，我說英語自信了很多。",
+        "class": "參加 1 - 1 課程"
+      },
+      {
+        "name": "My My",
+        "image": "/students/MyMy.webp",
+        "age": "22",
+        "location": "胡志明市",
+        "content": "一開始我對自己的英語口語能力很擔心，但感謝實用的學習計劃和敬業的教師，我取得了明顯的進步。話題多樣，容易應用於日常生活。老師逐字逐句地糾正發音，營造了輕鬆的練習氛圍。多虧了 Aspirely，我每天都更有信心交流。",
+        "class": "參加 1 - 1 課程"
+      }
+    ]
+  },
+  "CTA": {
+    "title": "你準備好了嗎？",
+    "subtitle": "免費體驗，感受不同。<br></br>讓 Aspirely 幫助你消除交流的擔憂，自信溝通，連接世界。",
+    "button": "立即註冊"
+  },
+  "footer": {
+    "sections": [
+      {
+        "title": "英語",
+        "items": [
+          { "key": "ielts", "label": "雅思口語訓練" },
+          { "key": "english_communication", "label": "英語交流" },
+          { "key": "english_business", "label": "商務英語" }
+        ]
+      },
+      {
+        "title": "中文",
+        "items": [
+          { "key": "chinese_study_abroad", "label": "留學中文" },
+          { "key": "chinese_communication", "label": "中文交流" },
+          { "key": "chinese_business", "label": "商務中文" }
+        ]
+      },
+      {
+        "title": "了解更多",
+        "items": [
+          { "label": "關於 Aspirely", "key": "about" },
+          { "label": "隱私政策", "key": "privacy" },
+          { "label": "服務條款", "key": "terms" },
+          { "label": "聯絡我們", "key": "contact" }
+        ]
+      }
+    ]
+  }
+}

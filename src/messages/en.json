@@ -1,0 +1,356 @@
+{
+  "header": {
+    "courses": "Courses",
+    "teachers": "Teachers",
+    "recruit": "Recruitment",
+    "login": "LOGIN",
+    "coursesMenu": [
+      {
+        "key": "english",
+        "title": "ENGLISH",
+        "items": [
+          { "key": "ielts", "label": "IELTS Speaking Practice" },
+          { "key": "communication", "label": "English Communication" },
+          { "key": "business", "label": "Business English" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "CHINESE",
+        "items": [
+          { "key": "studying_abroad", "label": "Chinese for Studying Abroad" },
+          { "key": "communication", "label": "Chinese Communication" },
+          { "key": "business", "label": "Business Chinese" }
+        ]
+      }
+    ]
+  },
+  "Hero": {
+    "contact": "GET STARTED",
+    "joinNow": "JOIN NOW"
+  },
+  "DidYouKnow":{
+    "title": "Did you know?",
+    "point1": "Most learners spend hundreds of hours practicing to speak a new language, yet still struggle in front of foreigners. Confused by not understanding and not knowing how to react?",
+    "point2": "With a team of native teachers, you will quickly improve your pronunciation, fluency, and confidence. The worry of <span>“not being able to communicate with natives”</span> will completely disappear."
+  },
+  "Highlights": [
+    {
+      "bg": "/assets/images/HighlightsSection/Picture1.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/AspirelyIcon.png",
+      "title": "What is Aspirely?",
+      "content": "Aspirely is an online language learning platform that focuses 100% on Listening and Speaking skills.<br/><br/>At Aspirely, you learn English and Chinese through real-life conversations. There are no dry textbooks, only effective, confident, and natural speaking practice.",
+      "button": "Learn More"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture2.png",
+      "overlay": "bg-[#00356d]/80",
+      "icon": "/assets/images/HighlightsSection/BookIcon.png",
+      "title": "Courses",
+      "content": "Daily conversations to speak more naturally and respond faster.<br/><br/>Listening & Speaking for IELTS & HSK to conquer international exams.<br/><br/>English and Chinese for work focusing on professional communication you can apply immediately.",
+      "button": "Our Courses"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture3.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/PeopleIcon.png",
+      "title": "Teachers",
+      "content": "By learning with native teachers, you will gradually speak more naturally, fluently, and confidently every day.<br/><br/>With Aspirely, you are not only learning a new language but also developing the skills to apply it in real life and at work.",
+      "button": "Our Teachers"
+    }
+  ],
+  "WorkshopPromo": {
+    "title": "Experience English Speaking <span>Workshop</span>",
+    "subtitle": "Understand quickly — Speak confidently",
+    "point1": "Start today with Aspirely!",
+    "point2": "Get started today: Free level test + 2 free trial lessons! to experience online learning with native teachers, practice pronunciation, and improve communication reflexes.",
+    "button": "Join for free"
+  },
+  "Courses": {
+    "title": "Together with <span>Aspirely</span>",
+    "subtitle": "Elevate your voice, expand your future",
+    "courses": [
+      {
+        "id": "01",
+        "title": "IELTS Speaking Practice",
+        "desc": "Conquer IELTS with the support of professional teachers. We help you achieve accurate pronunciation, practice natural speaking skills, and eliminate the fear of communicating with foreigners.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "02",
+        "title": "English Communication",
+        "desc": "Develop comprehensive English communication skills: pronunciation, vocabulary, reflexes, and confidence. This course brings you an effective learning experience, accompanying you on the path to global integration.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "03",
+        "title": "Business English",
+        "desc": "Advance your career with Business English. The course equips you with specialized language skills, persuasive communication, and a sustainable competitive advantage in the international environment.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "04",
+        "title": "Chinese for Studying Abroad",
+        "desc": "Not only for exam preparation, the Chinese for Studying Abroad course also provides you with practical communication skills, from daily conversations to academic and professional settings.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "05",
+        "title": "Chinese Communication",
+        "desc": "Chinese Communication for complete beginners, helping you speak fluently with native speakers. At the same time, improve your listening, reflexes, and vocabulary. A flexible course suitable for study, work, and career development.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "06",
+        "title": "Business Chinese",
+        "desc": "Business Chinese helps you converse fluently with native speakers while strengthening your listening, reflexes, and vocabulary. A flexible course tailored for study, work, and career advancement.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      }
+    ],
+    "chineseCourse": {
+      "communication": {
+        "title": "MASTER COMMUNICATION CHINESE",
+        "desc": "Learn to speak Chinese naturally — for travel, study abroad, and international opportunities.",
+        "unique": {
+          "title": "What Makes Us Different",
+          "children": [
+            {
+              "title": "Gain real confidence in Chinese conversations"
+            },
+            {
+              "title": "Learn words and phrases that locals actually use"
+            },
+            {
+              "title": "Supportive, experienced teachers to guide you step by step"
+            },
+            {
+              "title": "Study flexibly - anytime, anywhere"
+            }
+          ]
+        },
+        "features": {
+          "title": "",
+          "children": [
+            {
+              "title": "Why Learning Alone Is Hard",
+              "desc": "Chinese is more than characters in a book. Beginners often don’t know where to start, while advanced learners still struggle with tones and sounding natural. Apps and textbooks can’t correct your mistakes, experienced teachers can."
+            },
+            {
+              "title": "Turn Practice Into Confidence",
+              "desc": " From saying “你好” to handling a train ticket, practice makes your Chinese flow naturally in daily situations."
+            },
+            {
+              "title": "Faster Progress with Experienced Teachers",
+              "desc": "Our teachers don’t just teach, they guide you through pronunciation, tones, and cultural context, so you sound clear and confident."
+            },
+            {
+              "title": "Chinese That Works in Real Life",
+              "desc": "Aspirely prepares you for real-world communication, ordering food, making friends, studying abroad, doing business, or presenting your ideas in Chinese with confidence."
+            }
+          ]
+        }        
+      },
+      "business": {
+        "title": "MASTER BUSINESS CHINESE",
+        "desc": "Speak with impact, grow with confidence. Language skills that open doors, Careers that cross borders.",
+        "reason": {
+          "title": "Why Business Chinese?",
+          "children": [
+            {
+              "title": "Step Into the China Market",
+              "desc": "China is one of the world’s largest economies. With Business Chinese, you’ll be able to connect directly with clients, partners, and opportunities across Asia."
+            },
+            {
+              "title": "Beyond Textbooks",
+              "desc": "We focus on the phrases, strategies, and etiquette you’ll actually use in negotiations, contracts, and everyday workplace communication."
+            },
+            {
+              "title": "Stay Ahead in Your Field",
+              "desc": "Professionals who speak Chinese are valued for their ability to bridge cultures. Gain a competitive edge in international trade, finance, tech, and more."
+            }
+          ]
+        },
+        "target": {
+          "title": "Who should join the course?",
+          "children": [
+            {
+              "title": "Entrepreneurs entering or expanding in the Chinese market",
+              "icon": "MessageSquare"
+            },
+            {
+              "title": "Executives and managers working with Chinese teams or partners",
+              "icon": "Briefcase"
+            },
+            {
+              "title": "University graduates preparing for careers in global companies",
+              "icon": "BookOpen"
+            },
+            {
+              "title": "Organizations that need staff fluent in cross-border communication",
+              "icon": "Globe"
+            }
+          ]
+        },
+        "takeaway": {
+          "title": "Your Key Takeaways",
+          "children": [
+            {
+              "title": "Essential Business Vocabulary",
+              "desc": "From meetings to contracts, master the words that matter",
+              "ax": 5, "ay": 200, "side": "bottom"
+            },
+            {
+              "title": "Cross-Cultural Confidence",
+              "desc": "Understand business etiquette and build lasting partnerships",
+              "ax": 150, "ay": 140, "side": "top"
+            },
+            {
+              "title": "Clear & Persuasive Communication",
+              "desc": "Express ideas naturally in negotiations and presentations",
+              "ax": 380, "ay": 150, "side": "bottom"
+            },
+            {
+              "title": "Career Momentum",
+              "desc": "Move up faster with language skills employers demand",
+              "ax": 450, "ay": 90, "side": "top"
+            }
+          ]
+        },
+        "method": {
+          "title": "How We Teach",
+          "children": [
+            {
+              "title": "<b>Interactive Online Sessions</b> with experienced instructors"
+            },
+            {
+              "title": "<b>Case Studies & Role-plays</b> from real business scenarios"
+            },
+            {
+              "title": "<b>Flexible Scheduling</b> designed to fit around your work or study commitments"
+            }
+          ]
+        },
+        "forCoporation": {
+          "title": "Business Chinese for Companies",
+          "subtitle": "Equip your team with the skills to:",
+          "desc": "We design training tailored to your industry, ensuring your employees speak the language that brings results.",
+          "children": [
+            {
+              "title": "Build trust with Chinese clients"
+            },
+            {
+              "title": "Handle negotiations smoothly"
+            },
+            {
+              "title": "Communicate effectively across time zones and cultures"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Cefr": {
+    "title": "What is CEFR?",
+    "subtitle": "From Beginner to Proficient — The CEFR Language Journey"
+  },
+  "Teacher": {
+    "title": "Teaching Team",
+    "teachers": [
+      {
+        "id": "1",
+        "name": "Aimie C.",
+        "image": "/assets/images/TeacherSection/Aimie.webp"
+      },
+      {
+        "id": "2",
+        "name": "Mia M.",
+        "image": "/assets/images/TeacherSection/Mia.webp"
+      },
+      {
+        "id": "3",
+        "name": "Leo N.",
+        "image": "/assets/images/TeacherSection/Leo.webp"
+      }
+    ]
+  },
+  "Test": {
+    "subtitle": "In Minutes",
+    "title": "Test Your <br></br> Language Level",
+    "email": "Email",
+    "phone": "Phone Number",
+    "agreement1": "I consent to receiving updates about online courses",
+    "agreement2": "I agree to allow ASPIRELY to contact me via phone, email, or SMS to support and address my inquiries",
+    "button": "Free Assessment"
+  },
+  "Testimonial": {
+    "items": [
+      {
+        "name": "Phuong Nghi",
+        "image": "/students/PhuongNghi.webp",
+        "age": "20",
+        "location": "Ho Chi Minh City",
+        "content": "The website is easy to use, loads quickly, has a sleek interface, and online learning is very convenient without leaving home. The curriculum is personalized, so I study at the right level without pressure or rigidity. What I like most is the flexible schedule, perfect even for busy students like me.",
+        "class": "Join 1 - 1 class"
+      },
+      {
+        "name": "Nhi Nguyen",
+        "image": "/students/NhiNguyen.webp",
+        "age": "21",
+        "location": "Ho Chi Minh City",
+        "content": "The British lecturer's pronunciation is extremely accurate, she carefully corrects mistakes and always focuses on quality rather than quotas. Teacher Aimie is friendly, explains clearly, and is especially patient with slower learners like me. After some time studying, I've become much more confident speaking English.",
+        "class": "Join 1 - 1 class"
+      },
+      {
+        "name": "My My",
+        "image": "/students/MyMy.webp",
+        "age": "22",
+        "location": "Ho Chi Minh City",
+        "content": "At first, I was quite worried about my English speaking ability, but thanks to the practical learning program and dedicated teachers, I've made clear progress. The topics are diverse and easy to apply in daily life. The teacher corrects pronunciation in detail word by word, creating a comfortable atmosphere for practice. Thanks to the center, I feel more confident communicating every day.",
+        "class": "Join 1 - 1 class"
+      }
+    ]
+  },
+  "CTA": {
+    "title": "Are you ready?",
+    "subtitle": "Try it for free and feel the difference.<br></br>Let Aspirely help you remove the worries of communication, gain confidence, and connect globally.",
+    "button": "Sign Up"
+  },
+  "footer": {
+    "sections": [
+      {
+        "key": "english",
+        "title": "ENGLISH",
+        "items": [
+          { "key": "ielts", "label": "IELTS Speaking Practice" },
+          { "key": "communication", "label": "English Communication" },
+          { "key": "business", "label": "Business English" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "CHINESE",
+        "items": [
+          { "key": "studying_abroad", "label": "Chinese for Studying Abroad" },
+          { "key": "communication", "label": "Chinese Communication" },
+          { "key": "business", "label": "Business Chinese" }
+        ]
+      },
+      {
+        "title": "LEARN MORE",
+        "items": [
+          { "label": "About Aspirely", "key": "about" },
+          { "label": "Privacy Policy", "key": "privacy" },
+          { "label": "Terms of Service", "key": "terms" },
+          { "label": "Contact", "key": "contact" }
+        ]
+      }
+    ]
+  }
+}

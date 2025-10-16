@@ -1,0 +1,214 @@
+{
+  "header": {
+    "courses": "课程",
+    "teachers": "教师",
+    "recruit": "招聘",
+    "login": "登录",
+    "coursesMenu": [
+      {
+        "key": "english",
+        "title": "英语",
+        "items": [
+          { "key": "ielts", "label": "雅思口语训练" },
+          { "key": "communication", "label": "英语交流" },
+          { "key": "business", "label": "商务英语" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "中文",
+        "items": [
+          { "key": "chinese_studying_abroad", "label": "留学中文" },
+          { "key": "chinese_communication", "label": "中文交流" },
+          { "key": "chinese_business", "label": "商务中文" }
+        ]
+      }
+    ]
+  },
+  "Hero": {
+    "contact": "立即开始"
+  },
+  "DidYouKnow": {
+    "title": "你知道吗？",
+    "point1": "许多学习者花了很长时间练习新语言，但一遇到外国人，仍然感到挫败——听不懂、反应不及时，经常不知所措？",
+    "point2": "在母语教师团队的带领下，你将快速提升发音、流畅度和自信，从此不再担心<span>“无法与母语者交流”</span>。"
+  },
+  "Highlights": [
+    {
+      "bg": "/assets/images/HighlightsSection/Picture1.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/AspirelyIcon.png",
+      "title": "什么是 Aspirely？",
+      "content": "Aspirely 是一个专注于听力和口语技能的在线语言学习平台。<br/><br/>在 Aspirely，你不仅仅是在学习一门语言，而是真正能够在生活和工作中运用它。",
+      "button": "了解更多"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture2.png",
+      "overlay": "bg-[#00356d]/80",
+      "icon": "/assets/images/HighlightsSection/BookIcon.png",
+      "title": "课程",
+      "content": "日常对话，让你说得更自然、反应更快。<br/><br/>雅思 & HSK 听力口语，助你征服国际考试。<br/><br/>工作英语/中文——专业沟通，立即应用。",
+      "button": "我们的课程"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture3.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/PeopleIcon.png",
+      "title": "教师",
+      "content": "通过与母语教师学习，你将逐渐每天说得更自然、更流利、更自信。<br/><br/>在 Aspirely，你不仅仅是在学习一门语言——你真正能够在生活和工作中使用它。",
+      "button": "我们的教师"
+    }
+  ],
+  "WorkshopPromo": {
+    "title": "体验英语口语 <span>工作坊</span>",
+    "subtitle": "快速理解 —— 自信开口",
+    "point1": "今天就从 Aspirely 开始！",
+    "point2": "立即获取: 免费水平测试 + 2 节免费体验课，与母语教师在线学习，练习发音，提高沟通反应。",
+    "button": "免费参加"
+  },
+  "Courses": {
+    "title": "与 <span>Aspirely</span> 一起",
+    "subtitle": "提升你的声音，拓展你的未来",
+    "courses": [
+      {
+        "id": "01",
+        "title": "雅思口语训练",
+        "desc": "征服 IELTS，在专业老师的陪伴下更有信心。<br/><br/>自信走进考场，不再担心！我们陪伴你，让你听懂考官的每一个指令与问题。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "02",
+        "title": "英语交流",
+        "desc": "全面提升英语交流能力：发音、词汇、反应、自信。本课程为你带来高效的学习体验，陪伴你走向全球化。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "03",
+        "title": "商务英语",
+        "desc": "用商务英语提升你的职业生涯。本课程为你提供专业语言技能、说服性沟通和国际环境中的竞争优势。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "04",
+        "title": "留学中文",
+        "desc": "留学中文课程不仅仅是为了通过考试。我们为你打造扎实的基础，让你能自然沟通、融入学术环境，并轻松适应在台湾、中国或任何使用中文国家的生活。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "05",
+        "title": "中文交流",
+        "desc": "别担心，如果你是初学者！<br/><br/>你将逐步建立自信，提升沟通能力，让听说技能越来越流畅，让语言学习成为一段轻松而充满热情的体验。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "06",
+        "title": "商务中文",
+        "desc": "商务中文帮助你与母语者流利交流，同时加强听力、反应和词汇。灵活的课程，专为学习、工作和职业发展而设。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      }
+    ]
+  },
+  "Cefr": {
+    "title": "什么是 CEFR？",
+    "subtitle": "从初学者到精通者 —— CEFR 语言之旅"
+  },
+  "Teacher": {
+    "title": "教师团队",
+    "teachers": [
+      {
+        "id": "1",
+        "name": "Aimie C.",
+        "image": "/assets/images/TeacherSection/Aimie.webp"
+      },
+      {
+        "id": "2",
+        "name": "Mia M.",
+        "image": "/assets/images/TeacherSection/Mia.webp"
+      },
+      {
+        "id": "3",
+        "name": "Leo N.",
+        "image": "/assets/images/TeacherSection/Leo.webp"
+      }
+    ]
+  },
+  "Test": {
+    "subtitle": "几分钟内完成",
+    "title": "测试你的 <br></br> 语言水平",
+    "email": "电子邮件",
+    "phone": "电话号码",
+    "agreement1": "我同意接收关于线上英语课程的最新资讯",
+    "agreement2": "我同意 Aspirely 通过电话、电子邮件或短信联系我以提供支持并解答疑问",
+    "button": "免费测评"
+  },
+  "Testimonial": {
+    "items": [
+      {
+        "name": "Phuong Nghi",
+        "image": "/students/PhuongNghi.webp",
+        "age": "20",
+        "location": "胡志明市",
+        "content": "网站易于使用，加载快速，界面精美，线上学习非常方便，无需离开家。课程是个性化的，因此我能在合适的水平学习，没有压力或束缚。我最喜欢的是灵活的时间安排，即使是像我这样忙碌的学生也很适合。",
+        "class": "参加 1 - 1 课程"
+      },
+      {
+        "name": "Nhi Nguyen",
+        "image": "/students/NhiNguyen.webp",
+        "age": "21",
+        "location": "胡志明市",
+        "content": "英国讲师的发音非常标准，她细心纠正错误，总是注重质量而不是数量。Aimie 老师很友好，讲解清楚，对像我这样进度慢的学生尤其有耐心。学习一段时间后，我说英语自信了很多。",
+        "class": "参加 1 - 1 课程"
+      },
+      {
+        "name": "My My",
+        "image": "/students/MyMy.webp",
+        "age": "22",
+        "location": "胡志明市",
+        "content": "一开始我对自己的英语口语能力很担心，但感谢实用的学习计划和敬业的教师，我取得了明显的进步。话题多样，容易应用于日常生活。老师逐字逐句地纠正发音，营造了轻松的练习氛围。多亏了 Aspirely，我每天都更有信心交流。",
+        "class": "参加 1 - 1 课程"
+      }
+    ]
+  },
+  "CTA": {
+    "title": "你准备好了吗？",
+    "subtitle": "免费体验，感受不同。<br></br>让 Aspirely 帮助你消除交流的担忧，自信沟通，连接世界。",
+    "button": "立即注册"
+  },
+  "footer": {
+    "sections": [
+      {
+        "key": "english",
+        "title": "英语",
+        "items": [
+          { "key": "ielts", "label": "雅思口语训练" },
+          { "key": "communication", "label": "英语交流" },
+          { "key": "business", "label": "商务英语" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "中文",
+        "items": [
+          { "key": "studying_abroad", "label": "留学中文" },
+          { "key": "communication", "label": "中文交流" },
+          { "key": "business", "label": "商务中文" }
+        ]
+      },
+      {
+        "title": "了解更多",
+        "items": [
+          { "label": "关于 Aspirely", "key": "about" },
+          { "label": "隐私政策", "key": "privacy" },
+          { "label": "服务条款", "key": "terms" },
+          { "label": "联系我们", "key": "contact" }
+        ]
+      }
+    ]
+  }
+}
