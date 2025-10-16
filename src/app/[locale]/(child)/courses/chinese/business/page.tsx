@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ChevronLeft, Globe2, BriefcaseBusiness, Rocket } from "lucide-react";
 import { ChevronRight } from "lucide-react";
 import { MessageSquare, Briefcase, BookOpen, Globe } from "lucide-react";
+import { ContactForm } from "@/components/ContactForm";
 import {
   UserRoundPlus,
   Gauge,
@@ -498,6 +499,129 @@ function CoursesSection() {
   );
 }
 
+function MasterChineseBusiness({
+  personSrc = "/assets/images/courses/english/business/Section2/Person.png",
+}) {
+  const t = useTranslations();
+  const messages = useMessages();
+  const reasonData = (messages?.Courses?.chineseCourse?.business?.reason
+    ?.children || []) as {
+    title: string;
+    desc: string;
+    img: string;
+  }[];
+
+  return (
+    <section className="relative w-full bg-[#e5e7eb] py-[40px] lg:py-[80px]">
+      <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
+        <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
+          {t("Courses.chineseCourse.business.reason.title")}
+        </h2>
+        <div className="w-full">
+          {reasonData.map((f, i) => {
+            console.log(f, "ewvkn");
+            
+            return(
+            <div className={`w-full flex flex-row ${i % 2 !== 0 ? "flex-row-reverse" : ""} justify-between items-center`}>
+              <div className="flex flex-col gap-2">
+                <div className="font-bold">{f.title}</div>
+                <div className="">{f.desc}</div>
+              </div>
+              <div>
+                <img src={f.img} />
+              </div>
+            </div>
+          )})}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Achievements({}) {
+  const t = useTranslations();
+  const messages = useMessages();
+  const takeAwayData = (messages?.Courses?.chineseCourse?.business?.takeaway
+    ?.children || []) as {
+    title: string;
+    desc: string;
+  }[];
+
+  return (
+    <section className="relative w-full bg-linear-to-r from-green-500 to-green-100 py-[40px] lg:py-[80px]">
+      <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
+        <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
+          {t("Courses.chineseCourse.business.takeaway.title")}
+        </h2>
+        <div className="grid grid-cols-2 gap-4">
+          {takeAwayData.map((f, i) => (
+            <div className="flex flex-col items-center justify-center gap-4">
+              <div className="shrink-0">
+                <img
+                  src={
+                    "/assets/images/courses/chinese/business/ForBusiness/idea-icon.png"
+                  }
+                />
+              </div>
+              <p className="text-center">
+                <span className="font-bold">{f.title}</span> {f.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ForBusiness({
+  personSrc = "/assets/images/courses/chinese/business/ForBusiness/featured-ielts-general.png",
+}) {
+  const t = useTranslations();
+  const messages = useMessages();
+  const forCoporationData = (messages?.Courses?.chineseCourse?.business
+    ?.forCoporation?.children || []) as {
+    title: string;
+  }[];
+
+  return (
+    <section className="relative w-full bg-[#e5e7eb] py-[40px] lg:py-[80px]">
+      <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
+        <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
+          {t("Courses.chineseCourse.business.forCoporation.title")}
+        </h2>
+        <div className="flex flex-wrap justify-center items-center">
+          <div className="flex flex-col gap-[24px] px-[15px] py-0">
+            {forCoporationData.map((f, i) => (
+              <div key={i} className="flex gap-[1rem] ">
+                <div className="shrink-0">
+                  <img
+                    src={
+                      "/assets/images/courses/chinese/business/ForBusiness/idea-icon.png"
+                    }
+                  />
+                </div>
+                <h3 className="text-[18px] lg:text-[24px] font-semibold">
+                  {f.title}
+                </h3>
+              </div>
+            ))}
+          </div>
+          <div className="hidden lg:flex justify-center lg:justify-end px-[15px] py-0">
+            <Image
+              src={personSrc}
+              alt="Business English student"
+              width={520}
+              height={640}
+              className="w-full max-w-[520px] h-auto object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function ChineseBusinessCoursePage() {
   return (
     <main className="w-full">
@@ -507,7 +631,12 @@ export default function ChineseBusinessCoursePage() {
       <AchievementsSection />
       <HowYouWillLearnSection />
       <ForBusinessSection />
+
+      <MasterChineseBusiness />
+      <Achievements />
+      <ForBusiness />
       <CoursesSection />
+      <ContactForm />
     </main>
   );
 }
