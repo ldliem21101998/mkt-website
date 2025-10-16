@@ -58,13 +58,13 @@ export const ContactForm = () => {
 
   return (
     <div className="container mx-auto px-4 max-w-[1248px] py-16">
-      <div className="grid grid-cols-2 bg-[#edf7ff] rounded-3xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#edf7ff] rounded-3xl">
         <Image
           src="/assets/images/ContactForm/banner-contact-form.png"
           alt="Contact Form"
           width={500}
           height={500}
-          className="w-full h-auto object-cover"
+          className="w-auto h-full object-cover hidden sm:block"
         />
         <div className="relative">
           <Image
@@ -82,10 +82,12 @@ export const ContactForm = () => {
             className="absolute bottom-0 right-0"
           />
           <Form form={form} className="relative">
-            <div className="p-10 flex flex-col gap-6">
-              <div className="text-4xl font-bold">Đừng bỏ lỡ cơ hội!</div>
+            <div className="p-4 sm:p-10 flex flex-col gap-6">
+              <div className="text-2xl sm:text-3xl  text-center md:text-4xl sm:text-left font-bold">
+                Đừng bỏ lỡ cơ hội!
+              </div>
               <div className="flex flex-col gap-2">
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-6">
                   <div className="flex flex-col">
                     <div className="relative">
                       <Form.Item name="fullName" className="!mb-0">
@@ -213,7 +215,7 @@ export const ContactForm = () => {
                 <Button
                   type="primary"
                   size="large"
-                  className="w-fit mt-[22px]"
+                  className="w-full sm:w-fit mt-[22px]"
                   onClick={handleSubmit}
                 >
                   Gửi thông tin
