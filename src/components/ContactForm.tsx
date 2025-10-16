@@ -57,7 +57,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 max-w-[1248px] py-16">
+    <div className="container mx-auto px-4 max-w-[1248px] py-12 sm:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#edf7ff] rounded-3xl">
         <Image
           src="/assets/images/ContactForm/banner-contact-form.png"
