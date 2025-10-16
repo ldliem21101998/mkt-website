@@ -1,44 +1,9 @@
 "use client";
-import Image from "next/image";
-import { ChevronRight } from "lucide-react";
-import { useMessages, useTranslations } from "next-intl";
-import HexagonNumber from "@/components/HexagonNumber";
 import { ContactForm } from "@/components/ContactForm";
+import HexagonNumber from "@/components/HexagonNumber";
+import { useMessages, useTranslations } from "next-intl";
+import Image from "next/image";
 import { Banner } from "../business/page";
-
-function ChineseCommunicationSection() {
-  const t = useTranslations();
-  return (
-    <section className="relative w-full min-h-[420px] md:min-h-[520px] xl:min-h-[720px] flex items-center justify-start text-white bg-[#1D748C] lg:bg-transparent">
-      <Image
-        src="/assets/images/courses/english/communication/Banner.png"
-        alt="English Communication Background"
-        fill
-        className="object-cover hidden lg:block"
-        priority
-      />
-      <div className="relative z-10 w-full lg:w-1/2 flex flex-col items-start space-y-6 sm:space-y-8 md:space-y-10">
-        <div className="px-6 sm:px-8 md:px-10 pt-8 md:pt-10">
-          <h1 className="font-extrabold uppercase inline-block leading-tight">
-            <span className="text-3xl sm:text-4xl">
-              {t("Courses.chineseCourse.communication.title")}
-            </span>
-            <br />
-          </h1>
-          <p className="mb-4 sm:mb-6 text-lg sm:text-xl md:text-2xl max-w-2xl">
-            {t("Courses.chineseCourse.communication.desc")}
-          </p>
-        </div>
-        <button className="mx-6 sm:mx-8 md:mx-10 text-white font-bold flex items-center gap-2 transition mb-8">
-          <p className="bg-white lg:bg-[#1D748C] text-[#1D748C] lg:text-white text-2xl sm:text-3xl md:text-4xl py-3 px-10 sm:px-16 md:px-20 rounded-r-full">
-            {t("Hero.joinNow")}
-          </p>
-          <ChevronRight className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white lg:bg-[#1D748C] text-[#1D748C] lg:text-white rounded-full" />
-        </button>
-      </div>
-    </section>
-  );
-}
 
 function OurUniqueSection({
   imageSrc = "/assets/images/courses/english/communication/WhyPracticeSpeakingSection/image.png",
@@ -205,7 +170,7 @@ export default function ChineseCommunicationCoursePage() {
         title={"Courses.chineseCourse.communication.title"}
         desc={"Courses.chineseCourse.communication.desc"}
         imgSrc={
-          "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.png"
+          "/assets/images/courses/chinese/communication/Banner/banner.webp"
         }
       />
       <OurUniqueSection />

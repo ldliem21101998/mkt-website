@@ -218,12 +218,12 @@ export function Banner({
               </Button>
             </div>
           </div>
-          <div className="w-[350px] hidden sm:block">
+          <div className="w-[540px] hidden sm:block">
             <Image
               src={imgSrc}
               alt="banner-image"
-              width={350}
-              height={350}
+              width={649}
+              height={450}
               className="mx-auto"
             />
           </div>
@@ -430,9 +430,7 @@ export default function ChineseBusinessCoursePage() {
       <Banner
         title={"Courses.chineseCourse.business.title"}
         desc={"Courses.chineseCourse.business.desc"}
-        imgSrc={
-          "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.png"
-        }
+        imgSrc={"/assets/images/courses/chinese/business/Banner/banner.webp"}
       />
       <WhatYouWillGetSection />
       <MasterChineseBusiness />
