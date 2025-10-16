@@ -29,7 +29,7 @@
     "contact": "GET STARTED",
     "joinNow": "JOIN NOW"
   },
-  "DidYouKnow":{
+  "DidYouKnow": {
     "title": "Did you know?",
     "point1": "Most learners spend hundreds of hours practicing to speak a new language, yet still struggle in front of foreigners. Confused by not understanding and not knowing how to react?",
     "point2": "With a team of native teachers, you will quickly improve your pronunciation, fluency, and confidence. The worry of <span>“not being able to communicate with natives”</span> will completely disappear."
@@ -155,7 +155,7 @@
               "desc": "Aspirely prepares you for real-world communication, ordering food, making friends, studying abroad, doing business, or presenting your ideas in Chinese with confidence."
             }
           ]
-        }        
+        }
       },
       "business": {
         "title": "MASTER BUSINESS CHINESE",
@@ -204,22 +204,30 @@
             {
               "title": "Essential Business Vocabulary",
               "desc": "From meetings to contracts, master the words that matter",
-              "ax": 5, "ay": 200, "side": "bottom"
+              "ax": 5,
+              "ay": 200,
+              "side": "bottom"
             },
             {
               "title": "Cross-Cultural Confidence",
               "desc": "Understand business etiquette and build lasting partnerships",
-              "ax": 150, "ay": 140, "side": "top"
+              "ax": 150,
+              "ay": 140,
+              "side": "top"
             },
             {
               "title": "Clear & Persuasive Communication",
               "desc": "Express ideas naturally in negotiations and presentations",
-              "ax": 380, "ay": 150, "side": "bottom"
+              "ax": 380,
+              "ay": 150,
+              "side": "bottom"
             },
             {
               "title": "Career Momentum",
               "desc": "Move up faster with language skills employers demand",
-              "ax": 450, "ay": 90, "side": "top"
+              "ax": 450,
+              "ay": 90,
+              "side": "top"
             }
           ]
         },
@@ -352,5 +360,23 @@
         ]
       }
     ]
+  },
+  "ContactForm": {
+    "title": "Don't miss the opportunity!",
+    "fullName": "Full Name *",
+    "phone": "Phone Number *",
+    "email": "Email *",
+    "currentRole": "What are you currently? vd: student,.. *",
+    "course": "Interested Course",
+    "content": "Content",
+    "submit": "Submit",
+    "error": {
+      "fullName": "Please enter full name",
+      "phone": "Please enter phone number",
+      "email": "Please enter email",
+      "currentRole": "Please enter what you are currently? vd: student,..",
+      "course": "Please select course",
+      "content": "Please enter content"
+    }
   }
 }
