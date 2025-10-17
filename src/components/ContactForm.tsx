@@ -62,12 +62,13 @@ export const ContactForm = () => {
   return (
     <div className="container mx-auto px-4 max-w-[1248px] py-12 sm:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#edf7ff] rounded-3xl">
-        <Image
-          src="/assets/images/ContactForm/banner-contact-form.png"
-          alt="Contact Form"
-          width={500}
-          height={500}
-          className="w-auto h-full object-cover hidden sm:block"
+        <div
+          className="w-auto h-full object-cover hidden sm:block rounded-3xl"
+          style={{backgroundImage: "url(/assets/images/ContactForm/contact.png)",
+            backgroundRepeat:"no-repeat",
+            backgroundSize: "cover",
+            backgroundPositionY: "bottom"
+          }}
         />
         <div className="relative">
           <Image
@@ -218,7 +219,7 @@ export const ContactForm = () => {
                 <Button
                   type="primary"
                   size="large"
-                  className="w-full sm:w-fit mt-[22px]"
+                  className="w-full sm:w-fit mt-[22px] !bg-[#2596be] !text-white hover:!bg-white hover:!text-[#2596be] hover:!border-[#2596be]"
                   onClick={handleSubmit}
                 >
                   {t("submit")}
