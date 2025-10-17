@@ -28,7 +28,7 @@
   "Hero": {
     "contact": "BẮT ĐẦU NGAY",
     "joinNow": "THAM GIA NGAY",
-    "register":"ĐĂNG KÝ HỌC"
+    "register": "ĐĂNG KÝ HỌC"
   },
   "DidYouKnow": {
     "title": "Bạn có biết?",
@@ -167,17 +167,17 @@
             {
               "title": "Bước vào thị trường Trung Quốc",
               "desc": "Trung Quốc là nền kinh tế lớn, cơ hội hợp tác trải rộng khắp Châu Á. Biết Tiếng Trung giúp bạn kết nối trực tiếp với khách hàng và đối tác.",
-              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item1.png"
+              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item1.jpg"
             },
             {
               "title": "Học ngôn ngữ thực tiễn",
               "desc": "Không dừng lại ở sách vở, khóa học tập trung vào từ ngữ, cách giao tiếp và nghi thức cần thiết trong thương lượng, ký kết và làm việc hằng ngày.",
-              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item1.png"
+              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item2.jpg"
             },
             {
               "title": "Nắm lợi thế cạnh tranh",
               "desc": "Người thành thạo Tiếng Trung thường được đánh giá cao vì khả năng kết nối văn hóa. Đây là chìa khóa để thăng tiến trong thương mại, tài chính, công nghệ và nhiều ngành khác.",
-              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item1.png"
+              "img": "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.jpg"
             }
           ]
         },
@@ -239,13 +239,16 @@
           "title": "Cách chúng tôi giảng dạy",
           "children": [
             {
-              "title": "<b>Lớp học trực tuyến tương tác</b> với giảng viên giàu kinh nghiệm"
+              "title": "<b>Lớp học trực tuyến tương tác</b> với giảng viên giàu kinh nghiệm",
+              "img": "/assets/images/courses/chinese/business/HowWeTech/item1.jpg"
             },
             {
-              "title": "<b>Tình huống mô phỏng thực tế</b> nhập vai trong các kịch bản kinh doanh cụ thể"
+              "title": "<b>Tình huống mô phỏng thực tế</b> nhập vai trong các kịch bản kinh doanh cụ thể",
+              "img": "/assets/images/courses/chinese/business/HowWeTech/item2.jpg"
             },
             {
-              "title": "<b>Lịch học linh hoạt</b> phù hợp với nhịp làm việc và học tập của bạn"
+              "title": "<b>Lịch học linh hoạt</b> phù hợp với nhịp làm việc và học tập của bạn",
+              "img": "/assets/images/courses/chinese/business/HowWeTech/item3.jpg"
             }
           ]
         },

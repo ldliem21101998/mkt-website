@@ -239,6 +239,7 @@ function HowWeTeach() {
   const methodData = (messages?.Courses?.chineseCourse?.business?.method
     ?.children || []) as {
     title: string;
+    img: string;
   }[];
 
   return (
@@ -255,9 +256,7 @@ function HowWeTeach() {
             >
               <div className="w-full md:w-[50%] lg:w-full">
                 <Image
-                  src={
-                    "/assets/images/courses/chinese/business/MasterChineseBusiness/item3.png"
-                  }
+                  src={f.img}
                   alt="method-image"
                   width={214}
                   height={214}
@@ -312,9 +311,9 @@ function MasterChineseBusiness() {
               <Image
                 src={f.img}
                 alt="reason-image"
-                width={350}
-                height={350}
-                className="mx-auto w-1/2 sm:w-[350px] h-auto object-cover"
+                width={300}
+                height={300}
+                className="mx-auto w-1/2 sm:w-[350px] h-auto object-cover rounded-lg"
               />
             </div>
           ))}
