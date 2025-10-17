@@ -201,7 +201,7 @@ export function Banner({
     <section className="relative w-full bg-linear-to-r from-sky-200 to-[#edf7ff] py-[40px] lg:py-[80px] px-4">
       <div className="mx-auto xl:max-w-[1000px]">
         <div
-          className={`w-full flex flex-row justify-between items-center my-[10px]`}
+          className={`w-full flex flex-row-reverse justify-between items-center my-[10px]`}
         >
           <div className="flex flex-col gap-8 w-[490px]">
             <div className="font-black text-[36px]">{t(title)}</div>
