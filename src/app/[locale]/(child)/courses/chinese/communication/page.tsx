@@ -4,43 +4,57 @@ import HexagonNumber from "@/components/HexagonNumber";
 import { useMessages, useTranslations } from "next-intl";
 import Image from "next/image";
 import { Banner } from "../business/page";
+import { Button } from "antd";
 
-function OurUniqueSection({
-  imageSrc = "/assets/images/courses/english/communication/WhyPracticeSpeakingSection/image.png",
-}) {
+function OurUnique() {
   const messages = useMessages();
-  const t = useTranslations("Courses");
+  const t = useTranslations();
   const uniqueData = (messages?.Courses?.chineseCourse?.communication?.unique
     ?.children || []) as {
     title: string;
   }[];
 
   return (
-    <section className="w-full bg-[#efeff2] py-12 sm:py-14 lg:py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900">
-          {t("chineseCourse.communication.unique.title")}
-        </h2>
-        <div className="mt-10 sm:mt-12 grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-          <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow hidden lg:block">
-            <Image
-              src={imageSrc}
-              alt="Target audience"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="rounded-2xl px-5 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
-            <ul className="space-y-6 sm:space-y-8 text-gray-900">
-              {uniqueData.map((t, i) => (
-                <li
-                  key={i}
-                  className="text-lg sm:text-xl md:text-2xl leading-8 sm:leading-9"
-                >
-                  {t.title}
-                </li>
+    <section className="relative w-full bg-linear-to-b from-[#A40000] to-red-50 py-[40px] lg:py-[80px] px-4">
+      <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
+        <div
+          className={`w-full flex flex-row justify-between items-center my-[10px]`}
+        >
+          <div className="flex flex-col gap-8">
+            <div className="font-black text-white text-[36px]">
+              {t("Courses.chineseCourse.communication.title")}
+            </div>
+            {/* <div className="font-medium text-[20px]">{t(desc)}</div> */}
+            <div className="flex flex-col gap-6 px-[15px] py-0">
+              {uniqueData.map((f, i) => (
+                <div key={i} className="flex gap-[1rem] ">
+                  <div className="shrink-0">
+                    <Image
+                      src={
+                        "/assets/images/courses/chinese/communication/OurUnique/icons8-checkmark-40.png"
+                      }
+                      alt="idea-icon"
+                      width={31}
+                      height={32}
+                    />
+                  </div>
+                  <h3 className="text-[16px] lg:text-[18px] font-medium ">
+                    {f.title}
+                  </h3>
+                </div>
               ))}
-            </ul>
+            </div>
+          </div>
+          <div className="w-[540px] hidden sm:block">
+            <Image
+              src={
+                "/assets/images/courses/chinese/communication/OurUnique/banner-section-rocket.png"
+              }
+              alt="banner-image"
+              width={200}
+              height={100}
+              className="mx-auto"
+            />
           </div>
         </div>
       </div>
@@ -49,7 +63,7 @@ function OurUniqueSection({
 }
 
 function GuidedChineseLearning({
-  personSrc = "/assets/images/courses/english/business/Section2/student-group.png",
+  personSrc = "/assets/images/courses/chinese/communication/GuidedChinese/reason.png",
 }) {
   const messages = useMessages();
   const featuresData = (messages?.Courses?.chineseCourse?.communication
@@ -59,7 +73,7 @@ function GuidedChineseLearning({
   }[];
 
   return (
-    <section className="relative w-full bg-[#efeff2]">
+    <section className="relative w-full bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-14 lg:py-20">
         <div className="text-center text-3xl sm:text-4xl md:text-5xl font-extrabold">
           {featuresData[0].title}
@@ -99,43 +113,37 @@ type Course = { title: string; desc: string; img: string; cta: string };
 
 const items: Course[] = [
   {
-    title: "LUYỆN NÓI TIẾNG ANH IELTS",
+    title: "LUYỆN NÓI TIẾNG TRUNG DU HỌC",
     desc: "Cách nhanh nhất để chinh phục kỳ thi IELTS",
     img: "/assets/images/courses/english/communication/CoursesSection/image1.png",
     cta: "Phổ biến và tự nhiên",
   },
   {
-    title: "LUYỆN NÓI TIẾNG ANH GIAO TIẾP",
+    title: "TIẾNG TRUNG THƯƠNG MẠI",
     desc: "Từ Tiếng Anh Trong Lớp Học Đến Giao Tiếp Thực Tế",
     img: "/assets/images/courses/english/communication/CoursesSection/image2.png",
-    cta: "Phổ biến và tự nhiên",
-  },
-  {
-    title: "LUYỆN NÓI TIẾNG TRUNG GIAO TIẾP",
-    desc: "Học Tiếng Trung Trong Lớp, Tự Tin Nói Ngoài Đời",
-    img: "/assets/images/courses/english/communication/CoursesSection/image3.png",
     cta: "Phổ biến và tự nhiên",
   },
 ];
 
 function CoursesSection() {
   return (
-    <section className="w-full bg-[#0A2E73] py-12 sm:py-14 md:py-16">
+    <section className="w-full bg-linear-to-br from-[#A40000] to-red-50 py-12 sm:py-14 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-8 sm:mb-10 md:mb-12">
           CÁC KHÓA HỌC CỦA ASPIRELY
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 md:w-[60%] mx-auto">
           {items.map((c, i) => (
             <div
               key={i}
               className="relative bg-[#F7F7F5] rounded-2xl md:rounded-[28px] shadow-lg overflow-hidden flex flex-col"
             >
               <div className="p-5 sm:p-6 md:p-7 flex-1 flex flex-col">
-                <h3 className="text-[#0A2E73] text-lg sm:text-xl md:text-2xl font-extrabold text-center leading-tight">
+                <h3 className="text-[#A40000] text-lg sm:text-xl md:text-2xl font-extrabold text-center leading-tight">
                   {c.title}
                 </h3>
-                <p className="mt-3 sm:mt-4 text-center text-[#0A2E73] text-sm sm:text-base md:text-lg leading-relaxed">
+                <p className="mt-3 sm:mt-4 text-center text-sm sm:text-base md:text-lg leading-relaxed">
                   {c.desc}
                 </p>
                 <div className="mt-4 hidden lg:block">
@@ -149,10 +157,13 @@ function CoursesSection() {
                     />
                   </div>
                 </div>
-                <div className="mt-4 sm:mt-5 md:mt-6 flex">
-                  <button className="w-full sm:w-auto sm:px-5 md:px-6 px-4 py-2.5 sm:py-3 rounded-xl bg-[#0A2E73] text-white font-semibold shadow-md hover:bg-[#09306d] transition mx-auto">
+                <div className="mt-4 sm:mt-5 md:mt-6 flex items-center">
+                  <Button
+                    size="large"
+                    className=" bg-[#A40000] !text-white hover:!bg-white hover:!text-[#A40000] hover:!border-[#A40000] mx-auto"
+                  >
                     {c.cta}
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -172,8 +183,10 @@ export default function ChineseCommunicationCoursePage() {
         imgSrc={
           "/assets/images/courses/chinese/communication/Banner/banner.webp"
         }
+        bgSrc={"/assets/images/courses/chinese/communication/Banner/banner.jpg"}
+        reverse={true}
       />
-      <OurUniqueSection />
+      <OurUnique />
       <GuidedChineseLearning />
       <CoursesSection />
       <ContactForm />

@@ -123,43 +123,37 @@ type Course = { title: string; desc: string; img: string; cta: string };
 
 const items: Course[] = [
   {
-    title: "LUYỆN NÓI TIẾNG ANH IELTS",
+    title: "LUYỆN NÓI TIẾNG TRUNG DU HỌC",
     desc: "Cách nhanh nhất để chinh phục kỳ thi IELTS",
     img: "/assets/images/courses/english/communication/CoursesSection/image1.png",
     cta: "Phổ biến và tự nhiên",
   },
   {
-    title: "LUYỆN NÓI TIẾNG ANH GIAO TIẾP",
+    title: "TIẾNG TRUNG THƯƠNG MẠI",
     desc: "Từ Tiếng Anh Trong Lớp Học Đến Giao Tiếp Thực Tế",
     img: "/assets/images/courses/english/communication/CoursesSection/image2.png",
-    cta: "Phổ biến và tự nhiên",
-  },
-  {
-    title: "LUYỆN NÓI TIẾNG TRUNG GIAO TIẾP",
-    desc: "Học Tiếng Trung Trong Lớp, Tự Tin Nói Ngoài Đời",
-    img: "/assets/images/courses/english/communication/CoursesSection/image3.png",
     cta: "Phổ biến và tự nhiên",
   },
 ];
 
 function CoursesSection() {
   return (
-    <section className="w-full bg-[#0A2E73] py-12 sm:py-14 md:py-16">
+    <section className="w-full bg-linear-to-br from-[#A40000] to-red-50 py-12 sm:py-14 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-8 sm:mb-10 md:mb-12">
           CÁC KHÓA HỌC CỦA ASPIRELY
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 md:w-[60%] mx-auto">
           {items.map((c, i) => (
             <div
               key={i}
               className="relative bg-[#F7F7F5] rounded-2xl md:rounded-[28px] shadow-lg overflow-hidden flex flex-col"
             >
               <div className="p-5 sm:p-6 md:p-7 flex-1 flex flex-col">
-                <h3 className="text-[#0A2E73] text-lg sm:text-xl md:text-2xl font-extrabold text-center leading-tight">
+                <h3 className="text-[#A40000] text-lg sm:text-xl md:text-2xl font-extrabold text-center leading-tight">
                   {c.title}
                 </h3>
-                <p className="mt-3 sm:mt-4 text-center text-[#0A2E73] text-sm sm:text-base md:text-lg leading-relaxed">
+                <p className="mt-3 sm:mt-4 text-center text-sm sm:text-base md:text-lg leading-relaxed">
                   {c.desc}
                 </p>
                 <div className="mt-4 hidden lg:block">
@@ -173,10 +167,13 @@ function CoursesSection() {
                     />
                   </div>
                 </div>
-                <div className="mt-4 sm:mt-5 md:mt-6 flex">
-                  <button className="w-full sm:w-auto sm:px-5 md:px-6 px-4 py-2.5 sm:py-3 rounded-xl bg-[#0A2E73] text-white font-semibold shadow-md hover:bg-[#09306d] transition mx-auto">
+                <div className="mt-4 sm:mt-5 md:mt-6 flex items-center">
+                  <Button
+                    size="large"
+                    className=" bg-[#A40000] !text-white hover:!bg-white hover:!text-[#A40000] hover:!border-[#A40000] mx-auto"
+                  >
                     {c.cta}
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -191,23 +188,42 @@ export function Banner({
   title,
   desc,
   imgSrc,
+  reverse = false,
+  bgSrc = "",
 }: {
   title: string;
   desc: string;
   imgSrc: string;
+  bgSrc?: string;
+  reverse?: boolean;
 }) {
   const t = useTranslations();
   return (
-    <section className="relative w-full bg-linear-to-r from-sky-200 to-[#edf7ff] py-[40px] lg:py-[80px] px-4">
+    <section
+      className={`relative w-full bg-white py-[40px] lg:py-[80px] px-4 `}
+      style={
+        bgSrc
+          ? {
+              backgroundImage: `url(${bgSrc})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPositionY: "center"
+            }
+          : {}
+      }
+    >
+      <div className={`absolute w-full h-full top-0 left-0 ${bgSrc ? "opacity-20 bg-black" : ""}`}></div>
       <div className="mx-auto xl:max-w-[1000px]">
         <div
-          className={`w-full flex flex-row-reverse justify-between items-center my-[10px]`}
+          className={`w-full flex gap-2 ${
+            reverse ? "flex-row-reverse" : ""
+          } justify-between items-center my-[10px]`}
         >
-          <div className="flex flex-col gap-8 w-[490px]">
-            <div className="font-black text-[36px]">{t(title)}</div>
+          <div className="flex flex-col gap-8 w-[490px] z-3">
+            <div className={`font-black text-[36px] ${bgSrc ? "text-white" : ""}`}>{t(title)}</div>
             <div className="font-medium text-[20px]">{t(desc)}</div>
             <div className="flex gap-4">
-              <Button type="primary" size="large">
+              <Button className=" !bg-[#2596be] !text-white hover:!bg-white hover:!text-[#2596be] hover:!border-[#2596be]" size="large">
                 {t("Hero.joinNow")}
               </Button>
               <Button
@@ -218,13 +234,15 @@ export function Banner({
               </Button>
             </div>
           </div>
-          <div className="w-[540px] hidden sm:block">
+          <div
+            className={`w-[540px] hidden sm:block ${bgSrc ? "opacity-0" : ""}`}
+          >
             <Image
               src={imgSrc}
               alt="banner-image"
               width={649}
               height={450}
-              className="mx-auto"
+              className="mx-auto rounded-3xl"
             />
           </div>
         </div>
@@ -243,7 +261,7 @@ function HowWeTeach() {
   }[];
 
   return (
-    <section className="relative w-full bg-[#edf7ff] py-[40px] lg:py-[80px] px-4">
+    <section className="relative w-full bg-white py-[40px] lg:py-[80px] px-4">
       <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
         <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
           {t("Courses.chineseCourse.business.method.title")}
@@ -267,7 +285,7 @@ function HowWeTeach() {
                 className="text-center w-[90%]"
                 dangerouslySetInnerHTML={{ __html: f.title }}
               />
-              <Button type="primary" size="large">
+              <Button className=" !bg-[#2596be] !text-white hover:!bg-white hover:!text-[#2596be] hover:!border-[#2596be]" size="large">
                 {t("Hero.joinNow")}
               </Button>
             </div>
@@ -298,7 +316,7 @@ function MasterChineseBusiness() {
           {reasonData.map((f, i) => (
             <div
               key={i}
-              className={`w-full flex flex-col ${
+              className={`w-full flex flex-col gap-4 ${
                 i % 2 !== 0 ? "sm:flex-row-reverse" : "sm:flex-row"
               } justify-between items-center my-[10px]`}
             >
@@ -333,9 +351,9 @@ function Achievements({}) {
   }[];
 
   return (
-    <section className="relative w-full bg-linear-to-r from-sky-200 to-[#edf7ff] py-[40px] lg:py-[80px] ">
+    <section className="relative w-full bg-linear-to-br from-[#A40000] to-red-50 py-[40px] lg:py-[80px] ">
       <div className="mx-auto xl:max-w-[1000px] px-4">
-        <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px]">
+        <h2 className="text-[40px] text-center font-bold mb-[40px] lg:mb-[60px] text-white">
           {t("Courses.chineseCourse.business.takeaway.title")}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -376,14 +394,14 @@ function ForBusiness({
   }[];
 
   return (
-    <section className="relative w-full bg-[#edf7ff] py-[40px] lg:py-[80px]">
+    <section className="relative w-full bg-white py-[40px] lg:py-[80px]">
       <div className="mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1246px]">
-        <h2 className="text-[32px] md:text-[40px] text-center font-bold mb-2 lg:mb-8">
+        <h2 className="text-[32px] md:text-[40px] text-center font-bold mb-2 lg:mb-8 text-[#A40000]">
           {t("Courses.chineseCourse.business.forCoporation.title")}
         </h2>
         <div className="flex-1 flex flex-col-reverse sm:flex-row justify-center items-center">
           <div>
-            <p className="text-center text-2xl font-bold mb-6">
+            <p className="text-center text-2xl font-bold mb-6 text-[#A40000]">
               {t("Courses.chineseCourse.business.forCoporation.subtitle")}
             </p>
             <div className="flex flex-col gap-6 px-[15px] py-0">
@@ -429,7 +447,7 @@ export default function ChineseBusinessCoursePage() {
       <Banner
         title={"Courses.chineseCourse.business.title"}
         desc={"Courses.chineseCourse.business.desc"}
-        imgSrc={"/assets/images/courses/chinese/business/Banner/banner.webp"}
+        imgSrc={"/assets/images/courses/chinese/business/Banner/banner.jpg"}
       />
       <WhatYouWillGetSection />
       <MasterChineseBusiness />
